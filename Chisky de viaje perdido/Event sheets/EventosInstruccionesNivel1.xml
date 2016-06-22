@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosInstruccionesNivel1</name>
+    <events>
+        <event-group description="" sid="9667055401536745" title="MouseHoverEfectos">
+            <sub-events>
+                <event-block sid="4273080458576517">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="2620815376300758" type="Mouse">
+                            <param id="0" name="Object">SiguienteInsNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8811822994473009" type="SiguienteInsNivel1">
+                            <param id="0" name="Animation">&quot;Hover&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9055087444872368">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="4489898689008339" type="Mouse">
+                            <param id="0" name="Object">SiguienteInsNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1115897324644423" type="SiguienteInsNivel1">
+                            <param id="0" name="Animation">&quot;Base&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1043775510049091">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="1078684750009874" type="Mouse">
+                            <param id="0" name="Object">AtrasInsNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="311564632911602" type="AtrasInsNivel1">
+                            <param id="0" name="Animation">&quot;Hover&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="142721087393827">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="5063164085118267" type="Mouse">
+                            <param id="0" name="Object">AtrasInsNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5343999151444439" type="AtrasInsNivel1">
+                            <param id="0" name="Animation">&quot;Base&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6493647193574861">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="1247985361420607" type="Mouse">
+                            <param id="0" name="Object">JugarInsNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5644483497966942" type="JugarInsNivel1">
+                            <param id="0" name="Animation">&quot;Hover&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4085500424410943">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="7672660281899015" type="Mouse">
+                            <param id="0" name="Object">JugarInsNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="39787119057018" type="JugarInsNivel1">
+                            <param id="0" name="Animation">&quot;Base&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7185249967778704" title="ManejoDeIndicaciones">
+            <sub-events>
+                <event-block sid="4571255428595595">
+                    <conditions>
+                        <condition id="2" name="Mouse button is down" sid="1089221296873367" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="2606650999537255" type="Mouse">
+                            <param id="0" name="Object">SiguienteInsNivel1</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="7991767704527394" type="SiguienteInsNivel1" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="8117176495541589" type="System">
+                            <param id="0" name="Object to create">TransicionNiveles</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="3520201204076619" type="ObjetosIntercambioInsNivel1">
+                            <param id="0" name="Animation">&quot;NoParticipan&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8278611501018554" type="AtrasInsNivel1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2128584068689369" type="SiguienteInsNivel1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9884894348307007" type="JugarInsNivel1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4950117723530199">
+                    <conditions>
+                        <condition id="2" name="Mouse button is down" sid="5798608812270922" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="4775453275717576" type="Mouse">
+                            <param id="0" name="Object">AtrasInsNivel1</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="5399786836702166" type="AtrasInsNivel1" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="381704505937812" type="System">
+                            <param id="0" name="Object to create">TransicionNiveles</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="548803902244117" type="ObjetosIntercambioInsNivel1">
+                            <param id="0" name="Animation">&quot;Participan&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6866155152296524" type="AtrasInsNivel1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7762091304438811" type="JugarInsNivel1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7094582307861824" type="SiguienteInsNivel1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2463108390444351">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="3243875226659096" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">JugarInsNivel1</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="1396505349570194" type="JugarInsNivel1" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2308767325783821" type="System">
+                            <param id="0" name="Layout">Nivel1_1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2935394645601624" title="InicioYFinLayout2">
+            <sub-events>
+                <event-block sid="4265158003169287">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="5253830821419716" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="1649237662321356" type="System">
+                            <param id="0" name="Object to create">TransicionNiveles</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

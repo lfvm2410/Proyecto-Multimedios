@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosVideoIntro</name>
+    <events>
+        <event-block sid="722923076575219">
+            <conditions>
+                <condition id="2" name="Has ended" sid="8240343877926643" type="VideoDeIntro" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8686002360658812" type="System">
+                    <param id="0" name="Layout">Tutorial</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

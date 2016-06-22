@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosMenú</name>
+    <events>
+        <variable constant="0" name="accesoNiveles" sid="1306670921798364" static="0" type="number">0</variable>
+        <event-block sid="610743014245723">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="6124649167678944" type="ChiskyM">
+                    <param id="0" name="Object">P1</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="3904962277537665" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="7028050119934893" type="System">
+                    <param id="0" name="Layout">&quot;Nivel1_1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4281742350438154">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6103450538229825" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="2275516967769766" type="System">
+                    <param id="0" name="Object to create">Transición</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6873510831755059">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9544447398238942" type="ChiskyM">
+                    <param id="0" name="Object">Save1_1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-36" name="Save" sid="1289763492723147" type="System">
+                    <param id="0" name="Slot">&quot;L_MenuPrincipal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3597714531797165">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8077673259871171" type="ChiskyM">
+                    <param id="0" name="Object">Save1_2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-36" name="Save" sid="8269204544636907" type="System">
+                    <param id="0" name="Slot">&quot;L_MenuPrincipal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7802083439368747">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="5752355759403343" type="ChiskyM">
+                    <param id="0" name="Object">P2</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="4033362007378884" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="758914936650694" type="System">
+                    <param id="0" name="Layout">&quot;Nivel1_2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2677313656716639">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="3532414838009534" type="ChiskyM">
+                    <param id="0" name="Object">P3</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="74931370789562" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="9898726971098635" type="System">
+                    <param id="0" name="Layout">&quot;Nivel2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="280468365331873">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="3987093401583399" type="ChiskyM">
+                    <param id="0" name="Object">P4</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="3969515379365202" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="649719429292968" type="System">
+                    <param id="0" name="Layout">&quot;Nivel3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6520451194433957">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="736981341521247" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="295875807043429" type="z">
+                    <param id="0" name="Animation">&quot;Hover&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="8445890909638491" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+                <action id="4" name="Set animation" sid="3742891667171084" type="z">
+                    <param id="0" name="Animation">&quot;Base&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="8447125493757968" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6348119684494289">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="5922911267913233" type="ChiskyM">
+                    <param id="0" name="Object">P1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1710939997027046" type="P1">
+                    <param id="0" name="Animation">&quot;Hover&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3039131934105215">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1631641360018621" type="ChiskyM">
+                    <param id="0" name="Object">P2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2560475864297009" type="P2">
+                    <param id="0" name="Animation">&quot;Hover&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6163019702942407">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="6928518163868958" type="ChiskyM">
+                    <param id="0" name="Object">P3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1188272096471736" type="P3">
+                    <param id="0" name="Animation">&quot;Hover&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="127758786553882">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="2899496565975098" type="ChiskyM">
+                    <param id="0" name="Object">P4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8903807761527693" type="P4">
+                    <param id="0" name="Animation">&quot;Hover&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="194243934650744">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9999836842320195" type="System">
+                    <param id="0" name="Variable">accesoNiveles</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="5637072037990437" type="P1Block">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1249842978940687">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="1816147928683643" type="System">
+                    <param id="0" name="Variable">accesoNiveles</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="2909346488735822" type="P2Block">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4839986115456007">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3921980394308983" type="System">
+                    <param id="0" name="Variable">accesoNiveles</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="9161939123196108" type="P3Block">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3942801249988054">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="927991971709771" type="System" />
+                <condition id="4" name="Session key exists" sid="472511574521025" type="WebStorage">
+                    <param id="0" name="Key">&quot;accesoNiveles&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9594744423292034" type="System">
+                    <param id="0" name="Variable">accesoNiveles</param>
+                    <param id="1" name="Value">WebStorage.SessionValue(&quot;accesoNiveles&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6023030598157188">
+            <conditions>
+                <condition id="-22" name="Else" sid="3755353054558925" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="757541657606671" type="System">
+                    <param id="0" name="Variable">accesoNiveles</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
