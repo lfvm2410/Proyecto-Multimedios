@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosPreguntasNivel1</name>
+    <events>
+        <variable constant="0" name="PreguntaSeleccionadaNivel1" sid="8954389487281304" static="0" type="number">0</variable>
+        <variable constant="0" name="PuntosAciertosNivel1" sid="513021192980689" static="0" type="number">0</variable>
+        <variable constant="0" name="PuntosDesaciertosNivel1" sid="2593541249593477" static="0" type="number">0</variable>
+        <variable constant="0" name="PregIntermediaNiv1" sid="3060675974165145" static="0" type="number">0</variable>
+        <variable constant="0" name="NombrePreguntaSeleccionadaNivel1" sid="1766157533457168" static="0" type="text"></variable>
+        <variable constant="0" name="TipoPuntosPregNiv1" sid="7566220118669897" static="0" type="text"></variable>
+        <event-group description="" sid="1679087956674009" title="EleccionAutomaticaPreguntasYControlSalida">
+            <sub-events>
+                <event-block sid="3724262557832717">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2753226597506133" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3605511595580745" type="System">
+                            <param id="0" name="Variable">PreguntaSeleccionadaNivel1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6527418841008854" type="System">
+                            <param id="0" name="Variable">PuntosAciertosNivel1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2539594252799456" type="System">
+                            <param id="0" name="Variable">PuntosDesaciertosNivel1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2104144922725282" type="System">
+                            <param id="0" name="Variable">PregIntermediaNiv1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7795292986610247" type="System">
+                            <param id="0" name="Variable">NombrePreguntaSeleccionadaNivel1</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8961004713161868" type="System">
+                            <param id="0" name="Variable">TipoPuntosPregNiv1</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6920880820362383" type="System">
+                            <param id="0" name="Variable">PreguntaSeleccionadaNivel1</param>
+                            <param id="1" name="Value">round(random(1,10))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8499042428935916" type="System">
+                            <param id="0" name="Variable">NombrePreguntaSeleccionadaNivel1</param>
+                            <param id="1" name="Value">&quot;Pregunta&quot;&amp;PreguntaSeleccionadaNivel1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="3971408341922607" type="System">
+                            <param id="0" name="Object to create">TransicionNiveles</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="8506486217170236" type="PreguntasNivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="6483699638708402" type="OpcionANivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;A&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="6410038806626274" type="OpcionBNivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;B&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5236935615672378" type="OpcionCNivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;C&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="7795203368908543" type="OpcionDNivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;D&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1123248743544133">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="8974573910672949" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">ContinuarResultadosNiveles</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="941207376120296" type="ContinuarResultadosNiveles" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9558942618146709">
+                            <conditions>
+                                <condition id="4" name="Session key exists" sid="9609449668511833" type="WebStorage">
+                                    <param id="0" name="Key">&quot;PreguntaIntermedia&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="8486993008926719" type="System">
+                                    <param id="0" name="Variable">PregIntermediaNiv1</param>
+                                    <param id="1" name="Value">WebStorage.SessionValue(&quot;PreguntaIntermedia&quot;)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="5400725339054842">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="9613172376997896" type="System">
+                                            <param id="0" name="Variable">PregIntermediaNiv1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="4368802784325901">
+                                            <conditions>
+                                                <condition id="4" name="Session key exists" sid="6687903271266828" type="WebStorage">
+                                                    <param id="0" name="Key">&quot;TipoPuntos&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="7134504025568046" type="System">
+                                                    <param id="0" name="Variable">TipoPuntosPregNiv1</param>
+                                                    <param id="1" name="Value">WebStorage.SessionValue(&quot;TipoPuntos&quot;)</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="9921362687307899">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="3663392122608114" type="System">
+                                                            <param id="0" name="Variable">TipoPuntosPregNiv1</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;Acierto&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="7310993873213953">
+                                                            <conditions>
+                                                                <condition id="4" name="Session key exists" sid="2112152613213232" type="WebStorage">
+                                                                    <param id="0" name="Key">&quot;PuntosAciertoNivel1&quot;</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Set value" sid="6923555948204863" type="System">
+                                                                    <param id="0" name="Variable">PuntosAciertosNivel1</param>
+                                                                    <param id="1" name="Value">WebStorage.SessionValue(&quot;PuntosAciertoNivel1&quot;)</param>
+                                                                </action>
+                                                                <action id="-10" name="Add to" sid="2831428282421177" type="System">
+                                                                    <param id="0" name="Variable">PuntosAciertosNivel1</param>
+                                                                    <param id="1" name="Value">5</param>
+                                                                </action>
+                                                                <action id="1" name="Set session value" sid="322484180113552" type="WebStorage">
+                                                                    <param id="0" name="Key">&quot;PuntosAciertoNivel1&quot;</param>
+                                                                    <param id="1" name="Value">PuntosAciertosNivel1</param>
+                                                                </action>
+                                                                <action id="-2" name="Go to layout" sid="858137081354028" type="System">
+                                                                    <param id="0" name="Layout">ResultadosFinalNiveles</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                                <event-block sid="8929767579588624">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="7928431826822952" type="System">
+                                                            <param id="0" name="Variable">TipoPuntosPregNiv1</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">&quot;Desacierto&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="2360375445521912">
+                                                            <conditions>
+                                                                <condition id="4" name="Session key exists" sid="4545547107331573" type="WebStorage">
+                                                                    <param id="0" name="Key">&quot;PuntosDesaciertoNivel1&quot;</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-9" name="Set value" sid="7605303894437632" type="System">
+                                                                    <param id="0" name="Variable">PuntosDesaciertosNivel1</param>
+                                                                    <param id="1" name="Value">WebStorage.SessionValue(&quot;PuntosDesaciertoNivel1&quot;)</param>
+                                                                </action>
+                                                                <action id="-10" name="Add to" sid="2974012658010734" type="System">
+                                                                    <param id="0" name="Variable">PuntosDesaciertosNivel1</param>
+                                                                    <param id="1" name="Value">5</param>
+                                                                </action>
+                                                                <action id="1" name="Set session value" sid="8359139708667556" type="WebStorage">
+                                                                    <param id="0" name="Key">&quot;PuntosDesaciertoNivel1&quot;</param>
+                                                                    <param id="1" name="Value">PuntosDesaciertosNivel1</param>
+                                                                </action>
+                                                                <action id="-2" name="Go to layout" sid="7295701094689352" type="System">
+                                                                    <param id="0" name="Layout">ResultadosFinalNiveles</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="7561576693930495">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="5826208974017214" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-37" name="Load" sid="8363933479296789" type="System">
+                                            <param id="0" name="Slot">&quot;CheckPointPregunta&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5561005040054632" title="MouseHoverEfectosPreguntasNivel1">
+            <sub-events>
+                <event-block sid="8461816450824409">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="8141003871676951" type="Mouse">
+                            <param id="0" name="Object">OpcionANivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2403018443044515" type="OpcionANivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;AMovimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="932208743358625">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="8509300391157092" type="Mouse">
+                            <param id="0" name="Object">OpcionANivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1424814879059275" type="OpcionANivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;A&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4600663000150402">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="4141363417791958" type="Mouse">
+                            <param id="0" name="Object">OpcionBNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9908423166115785" type="OpcionBNivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;BMovimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3693229019237605">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="5346579495750548" type="Mouse">
+                            <param id="0" name="Object">OpcionBNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6356627279067012" type="OpcionBNivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;B&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8708429054713314">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="9590299781068854" type="Mouse">
+                            <param id="0" name="Object">OpcionCNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2353522959397085" type="OpcionCNivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;CMovimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="948570718665682">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="3471535692220326" type="Mouse">
+                            <param id="0" name="Object">OpcionCNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="776161014838758" type="OpcionCNivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;C&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3086173338966939">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="2227780641622811" type="Mouse">
+                            <param id="0" name="Object">OpcionDNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8183696842655181" type="OpcionDNivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;DMovimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="901465828923359">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="2137398393033804" type="Mouse">
+                            <param id="0" name="Object">OpcionDNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1709044410653796" type="OpcionDNivel1">
+                            <param id="0" name="Animation">NombrePreguntaSeleccionadaNivel1&amp;&quot;D&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3526355217374201">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="3524095315713788" type="Mouse">
+                            <param id="0" name="Object">ContinuarResultadosNiveles</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9456163203995267" type="ContinuarResultadosNiveles">
+                            <param id="0" name="Animation">&quot;Hover&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7668023249995446">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="1340656244721673" type="Mouse">
+                            <param id="0" name="Object">ContinuarResultadosNiveles</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2369895753953325" type="ContinuarResultadosNiveles">
+                            <param id="0" name="Animation">&quot;Base&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="8557546463936196" title="ValidacionDeRespuestas">
+            <sub-events>
+                <event-block collapsed="1" sid="1214941661472761">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="9408929639759699" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">OpcionCNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="211597674175073">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="4970980363398623" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set session value" sid="8390925579072673" type="WebStorage">
+                                    <param id="0" name="Key">&quot;TipoPuntos&quot;</param>
+                                    <param id="1" name="Value">&quot;Acierto&quot;</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="3371542821722306" type="System">
+                                    <param id="0" name="Object to create">TransicionNiveles</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="7208474693538432" type="OpcionANivel1" />
+                                <action id="-9" name="Destroy" sid="1189678417246362" type="OpcionBNivel1" />
+                                <action id="-9" name="Destroy" sid="4206000981719171" type="OpcionCNivel1" />
+                                <action id="-9" name="Destroy" sid="5314888134116038" type="OpcionDNivel1" />
+                                <action id="-9" name="Destroy" sid="6107599516585667" type="TutorialPreguntasNivel1" />
+                                <action id="-15" name="Set visible" sid="4928336401221831" type="ContinuarResultadosNiveles">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="3543558938868305" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;RespuestaCorrecta&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" collapsed="1" sid="5674610478504059">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="9220493376141072" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">OpcionANivel1</param>
+                        </condition>
+                        <condition id="6" name="On object clicked" sid="5658274714602441" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">OpcionBNivel1</param>
+                        </condition>
+                        <condition id="6" name="On object clicked" sid="3711490940846021" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">OpcionDNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7109060516815307">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="7084380444285318" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set session value" sid="2449953123531009" type="WebStorage">
+                                    <param id="0" name="Key">&quot;TipoPuntos&quot;</param>
+                                    <param id="1" name="Value">&quot;Desacierto&quot;</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="6893015583024522" type="System">
+                                    <param id="0" name="Object to create">TransicionNiveles</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="3959543682844452" type="OpcionANivel1" />
+                                <action id="-9" name="Destroy" sid="2445257937657014" type="OpcionBNivel1" />
+                                <action id="-9" name="Destroy" sid="8094195281265156" type="OpcionCNivel1" />
+                                <action id="-9" name="Destroy" sid="1925669315483222" type="OpcionDNivel1" />
+                                <action id="-9" name="Destroy" sid="568731535575585" type="TutorialPreguntasNivel1" />
+                                <action id="-15" name="Set visible" sid="9124106012116403" type="ContinuarResultadosNiveles">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="190957092707795" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;RespuestaIncorrecta&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block collapsed="1" sid="1878476707638766">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="8447535497917263" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">OpcionANivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="2423994515433376">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="4039766133026432" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta2&quot;</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="9993606718741894" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta7&quot;</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="1962563347861333" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta8&quot;</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="7651853770758395" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta10&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set session value" sid="9452392066789569" type="WebStorage">
+                                    <param id="0" name="Key">&quot;TipoPuntos&quot;</param>
+                                    <param id="1" name="Value">&quot;Acierto&quot;</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="32727161082798" type="System">
+                                    <param id="0" name="Object to create">TransicionNiveles</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="9020516991859762" type="OpcionANivel1" />
+                                <action id="-9" name="Destroy" sid="114010944537452" type="OpcionBNivel1" />
+                                <action id="-9" name="Destroy" sid="9099103811219534" type="OpcionCNivel1" />
+                                <action id="-9" name="Destroy" sid="3105530323308707" type="OpcionDNivel1" />
+                                <action id="-9" name="Destroy" sid="9237628863622982" type="TutorialPreguntasNivel1" />
+                                <action id="-15" name="Set visible" sid="1593389233413452" type="ContinuarResultadosNiveles">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="7067210147849326" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;RespuestaCorrecta&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" collapsed="1" sid="2340338898562348">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="5854198004701028" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">OpcionBNivel1</param>
+                        </condition>
+                        <condition id="6" name="On object clicked" sid="2816614253399492" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">OpcionCNivel1</param>
+                        </condition>
+                        <condition id="6" name="On object clicked" sid="9115250490722374" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">OpcionDNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="2770692160020206">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="134551843245597" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta2&quot;</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="7265461472145678" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta7&quot;</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="8612039455935434" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta8&quot;</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="4829170321002327" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta10&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set session value" sid="845122959433654" type="WebStorage">
+                                    <param id="0" name="Key">&quot;TipoPuntos&quot;</param>
+                                    <param id="1" name="Value">&quot;Desacierto&quot;</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="4875081369275264" type="System">
+                                    <param id="0" name="Object to create">TransicionNiveles</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="9625521120448376" type="OpcionANivel1" />
+                                <action id="-9" name="Destroy" sid="6721376918225384" type="OpcionBNivel1" />
+                                <action id="-9" name="Destroy" sid="7089387000457316" type="OpcionCNivel1" />
+                                <action id="-9" name="Destroy" sid="1590311707971593" type="OpcionDNivel1" />
+                                <action id="-9" name="Destroy" sid="2446667834829653" type="TutorialPreguntasNivel1" />
+                                <action id="-15" name="Set visible" sid="6079740521146547" type="ContinuarResultadosNiveles">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="3398277493472548" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;RespuestaIncorrecta&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block collapsed="1" sid="2574247814083063">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="7227282575429852" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">OpcionDNivel1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="5821879155692942">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="2531917691439732" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta3&quot;</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="9858415524500304" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta4&quot;</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="4392632580634205" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta5&quot;</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="5372559927197319" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta6&quot;</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="5336201800790426" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;Pregunta9&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set session value" sid="5500784143673634" type="WebStorage">
+                                    <param id="0" name="Key">&quot;TipoPuntos&quot;</param>
+                                    <param id="1" name="Value">&quot;Acierto&quot;</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="5056854652637251" type="System">
+                                    <param id="0" name="Object to create">TransicionNiveles</param>
+                                    <param id="1" name="Layer">2</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="4573441332803992" type="OpcionANivel1" />
+                                <action id="-9" name="Destroy" sid="6545661159115987" type="OpcionBNivel1" />
+                                <action id="-9" name="Destroy" sid="887118073822323" type="OpcionCNivel1" />
+                                <action id="-9" name="Destroy" sid="5847974491513501" type="OpcionDNivel1" />
+                                <action id="-9" name="Destroy" sid="8701250321948947" type="TutorialPreguntasNivel1" />
+                                <action id="-15" name="Set visible" sid="2764891795196246" type="ContinuarResultadosNiveles">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="5201868000768248" type="PreguntasNivel1">
+                                    <param id="0" name="Animation">&quot;RespuestaCorrecta&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block any="1" sid="907886400671004">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5016748455976122" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">OpcionANivel1</param>
+                </condition>
+                <condition id="6" name="On object clicked" sid="6213920319570908" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">OpcionBNivel1</param>
+                </condition>
+                <condition id="6" name="On object clicked" sid="87243611876494" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">OpcionCNivel1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="2744901328250918">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="291917576964045" type="PreguntasNivel1">
+                            <param id="0" name="Animation">&quot;Pregunta3&quot;</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="5579261583420203" type="PreguntasNivel1">
+                            <param id="0" name="Animation">&quot;Pregunta4&quot;</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="7535787446714311" type="PreguntasNivel1">
+                            <param id="0" name="Animation">&quot;Pregunta5&quot;</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="863662172215318" type="PreguntasNivel1">
+                            <param id="0" name="Animation">&quot;Pregunta6&quot;</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="1132287638760603" type="PreguntasNivel1">
+                            <param id="0" name="Animation">&quot;Pregunta9&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set session value" sid="5862042566552926" type="WebStorage">
+                            <param id="0" name="Key">&quot;TipoPuntos&quot;</param>
+                            <param id="1" name="Value">&quot;Desacierto&quot;</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="7864105820044697" type="System">
+                            <param id="0" name="Object to create">TransicionNiveles</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9171968112672066" type="OpcionANivel1" />
+                        <action id="-9" name="Destroy" sid="9426996350524457" type="OpcionBNivel1" />
+                        <action id="-9" name="Destroy" sid="2771500135463092" type="OpcionCNivel1" />
+                        <action id="-9" name="Destroy" sid="8911618683548128" type="OpcionDNivel1" />
+                        <action id="-9" name="Destroy" sid="1234861932005486" type="TutorialPreguntasNivel1" />
+                        <action id="-15" name="Set visible" sid="1712362708981714" type="ContinuarResultadosNiveles">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="4061605083306338" type="PreguntasNivel1">
+                            <param id="0" name="Animation">&quot;RespuestaIncorrecta&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
