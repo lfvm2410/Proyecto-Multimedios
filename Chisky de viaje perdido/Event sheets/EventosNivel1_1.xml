@@ -737,6 +737,10 @@
                     <param id="0" name="Variable">ControlSonidoPiraniasNivel1_1</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-9" name="Set value" sid="8722682454092722" type="System">
+                    <param id="0" name="Variable">tipoPuntosNivel1_1</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
                 <action id="-3" name="Create object" sid="1969045612752784" type="System">
                     <param id="0" name="Object to create">TransicionNiveles</param>
                     <param id="1" name="Layer">5</param>

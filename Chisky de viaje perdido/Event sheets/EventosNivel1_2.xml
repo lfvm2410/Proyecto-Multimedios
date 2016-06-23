@@ -3,9 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventosNivel1_2</name>
     <events>
+        <variable constant="0" name="tipoPuntosNivel1_2" sid="3455279982024386" static="0" type="text"></variable>
         <variable constant="0" name="SilencioNivel1_2" sid="5400319133597056" static="0" type="number">0</variable>
         <variable constant="0" name="puntosErroneosSelva1_2" sid="47290791491209" static="0" type="number">0</variable>
         <variable constant="0" name="puntosAciertoSelva1_2" sid="9804168718863347" static="0" type="number">0</variable>
+        <variable constant="0" name="ControlPistaNivel1_2" sid="9006613775786783" static="0" type="number">0</variable>
         <event-block sid="1613639133873863">
             <conditions>
                 <condition behavior="Platform" id="0" name="Is moving" sid="4144272210848264" type="Chisky" />
@@ -585,7 +587,20 @@
                     <param id="3" name="Volume">-2</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
-                <action id="-9" name="Destroy" sid="2662808064887094" type="PreguntasNivel1_1" />
+                <action id="-9" name="Destroy" sid="4275095450592832" type="PreguntasNivel1_1" />
+                <action id="1" name="Set session value" sid="2272215431813119" type="WebStorage">
+                    <param id="0" name="Key">&quot;PreguntaIntermedia&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="7373489047491446" type="System">
+                    <param id="0" name="Seconds">0.8</param>
+                </action>
+                <action id="-36" name="Save" sid="8115997250826373" type="System">
+                    <param id="0" name="Slot">&quot;CheckPointPregunta&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="5800849263059847" type="System">
+                    <param id="0" name="Layout">PreguntasNivel1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="8579615311158458">
@@ -680,6 +695,14 @@
                     <param id="0" name="Variable">puntosAciertoSelva1_2</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-9" name="Set value" sid="3399609377445646" type="System">
+                    <param id="0" name="Variable">ControlPistaNivel1_2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="147628231497822" type="System">
+                    <param id="0" name="Variable">tipoPuntosNivel1_2</param>
+                    <param id="1" name="Value">&quot;&quot;</param>
+                </action>
                 <action id="-3" name="Create object" sid="1480694933972031" type="System">
                     <param id="0" name="Object to create">TransicionNiveles</param>
                     <param id="1" name="Layer">4</param>
@@ -727,6 +750,16 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="5812054058002775" type="Audio">
+                    <param id="0" name="Audio file">Sonido golpe banano</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-11</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="3705323493084731" type="System">
+                    <param id="0" name="Variable">ControlPistaNivel1_2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="-3" name="Create object" sid="8915254221317818" type="System">
                     <param id="0" name="Object to create">TransicionNiveles</param>
                     <param id="1" name="Layer">4</param>
@@ -736,6 +769,16 @@
                 <action id="-3" name="Set position" sid="6691463598599071" type="Chisky">
                     <param id="0" name="X">3820</param>
                     <param id="1" name="Y">0</param>
+                </action>
+                <action id="1" name="Set session value" sid="2158682546999817" type="WebStorage">
+                    <param id="0" name="Key">&quot;PreguntaIntermedia&quot;</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-36" name="Save" sid="2580696771648315" type="System">
+                    <param id="0" name="Slot">&quot;CheckPointPregunta&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1565911688389659" type="System">
+                    <param id="0" name="Layout">PreguntasNivel1</param>
                 </action>
             </actions>
         </event-block>
@@ -861,8 +904,12 @@
                     <param id="0" name="Key">&quot;accesoNiveles&quot;</param>
                     <param id="1" name="Value">3</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="1891297762850516" type="System">
-                    <param id="0" name="Layout">ResultadosFinalNiveles</param>
+                <action id="1" name="Set session value" sid="4074147888522297" type="WebStorage">
+                    <param id="0" name="Key">&quot;PreguntaIntermedia&quot;</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1639526043953921" type="System">
+                    <param id="0" name="Layout">PreguntasNivel1</param>
                 </action>
             </actions>
         </event-block>
@@ -1058,6 +1105,33 @@
                     </conditions>
                     <actions>
                         <action id="4" name="Set animation" sid="5074379883673904" type="Rana">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3950409482344443">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="8173644644720688" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2692022766891129" type="Mono">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="37604178522492">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="657191625535827" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                        <condition id="-9" name="Is visible" sid="2538745528877219" type="PistaNivel1_2" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4372502580997907" type="PistaNivel1_2">
                             <param id="0" name="Animation">&quot;Movimiento&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -1298,10 +1372,6 @@
                 <action id="-8" name="Set angle" sid="3239289626862401" type="Mono">
                     <param id="0" name="Angle">180</param>
                 </action>
-                <action id="4" name="Set animation" sid="7875129080928296" type="Mono">
-                    <param id="0" name="Animation">&quot;Regreso&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
                 <action id="7" name="Set mirrored" sid="3447317940195254" type="Mono">
                     <param id="0" name="State">0</param>
                 </action>
@@ -1334,6 +1404,120 @@
                 </action>
                 <action id="7" name="Set mirrored" sid="1665250673423849" type="Serpiente">
                     <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="552888878094816">
+            <conditions>
+                <condition id="-29" name="On load complete" sid="1299110880095499" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9209039626363733">
+                    <conditions>
+                        <condition id="4" name="Session key exists" sid="4805715704141174" type="WebStorage">
+                            <param id="0" name="Key">&quot;TipoPuntos&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7653553545914915" type="System">
+                            <param id="0" name="Variable">tipoPuntosNivel1_2</param>
+                            <param id="1" name="Value">WebStorage.SessionValue(&quot;TipoPuntos&quot;)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="3204390652666687">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="9559489576231449" type="System">
+                                    <param id="0" name="Variable">tipoPuntosNivel1_2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Acierto&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="3135549182487421" type="System">
+                                    <param id="0" name="Variable">puntosAciertoSelva1_2</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="0" name="Set text" sid="1868716316053598" type="ContadorPuntos">
+                                    <param id="0" name="Text">puntosAciertoSelva1_2</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="8220032541076355" type="System">
+                                    <param id="0" name="Seconds">0.8</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="8301150812566532" type="Chisky">
+                                    <param id="0" name="Object">5PuntosMsjNivel1_2</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="6606766074486119" type="5PuntosMsjNivel1_2">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="1553340401881074" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="8106704021926254" type="Chisky">
+                                    <param id="0" name="Object">ParticipaIntercambioNivel1</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="1346898031699323" type="ParticipaIntercambioNivel1">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4421248333174049">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2575803771922976" type="System">
+                                    <param id="0" name="Variable">tipoPuntosNivel1_2</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Desacierto&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="994259008013926" type="System">
+                                    <param id="0" name="Variable">puntosErroneosSelva1_2</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="9556388101790075" type="System">
+                                    <param id="0" name="Seconds">0.8</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="1495529913964941" type="Chisky">
+                                    <param id="0" name="Object">5PuntosMsjNivel1_2</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="2517747494616222" type="5PuntosMsjNivel1_2">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="1090360969104166" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="1353472575126367" type="Chisky">
+                                    <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="2828736352145786" type="NoParticipaIntercambioNivel1">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7613759412121874">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="242831643316785" type="System">
+                    <param id="0" name="Variable">ControlPistaNivel1_2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4427872760328195" type="PistaNivel1_2">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
