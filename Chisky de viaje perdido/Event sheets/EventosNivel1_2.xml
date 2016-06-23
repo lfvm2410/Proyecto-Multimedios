@@ -878,7 +878,7 @@
         <event-block sid="5639694652569175">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="8463231726240602" type="Chisky">
-                    <param id="0" name="Object">ParedFinalSelva</param>
+                    <param id="0" name="Object">ParedFinalPortal</param>
                 </condition>
             </conditions>
             <actions>
@@ -1512,7 +1512,7 @@
                 <condition id="-14" name="Compare variable" sid="242831643316785" type="System">
                     <param id="0" name="Variable">ControlPistaNivel1_2</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">5</param>
+                    <param id="2" name="Value">3</param>
                 </condition>
             </conditions>
             <actions>

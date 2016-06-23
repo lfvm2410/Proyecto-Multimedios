@@ -35,6 +35,7 @@
     <used-effects>
         <effect author="Scirra" id="warpripple">Warp Ripple</effect>
         <effect author="Viktor Korsun" id="water">Water</effect>
+        <effect author="Viktor Korsun" id="waterbg">Water background</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -5462,6 +5463,67 @@
                             <point x="0.351563" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PortalNiveles" sid="5188599513907192">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="WaterBackground">
+                    <effect id="waterbg" />
+                </effect-type>
+            </effects>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="7486289523617139" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\UCR\PortalNiveles.png">
+                        <collision-poly>
+                            <point x="0.14125" y="0.269048" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85875" y="0.269048" />
+                            <point x="0.965" y="0.5" />
+                            <point x="0.9575" y="0.919048" />
+                            <point x="0.5" y="0.995238" />
+                            <point x="0.0425" y="0.919048" />
+                            <point x="0.035" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PortalNivelesEfecto" sid="3900741585091625">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="WaterBackground">
+                    <effect id="waterbg" />
+                </effect-type>
+            </effects>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="3001115649067642" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\UCR\PortalNivelesAgua1.png">
+                        <collision-poly>
+                            <point x="0.20125" y="0.383333" />
+                            <point x="0.5" y="0.047619" />
+                            <point x="0.8" y="0.380952" />
+                            <point x="0.845" y="0.5" />
+                            <point x="0.86125" y="0.735714" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.13875" y="0.735714" />
+                            <point x="0.155" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ParedFinalPortal" sid="5959923006343121">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8804717369993247">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="2743964289882969" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

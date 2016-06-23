@@ -792,10 +792,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5675</x>
+                        <x>5739.5</x>
                         <y>300</y>
                         <z>0</z>
-                        <width>140</width>
+                        <width>11</width>
                         <height>602</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -949,6 +949,43 @@
                         <z>0</z>
                         <width>52.349784851</width>
                         <height>57.61246109</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PortalNiveles" uid="927">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="WaterBackground">
+                            <parameters>
+                                <angle>11</angle>
+                                <delta>40</delta>
+                                <emboss>0.3</emboss>
+                                <frequency>4</frequency>
+                                <intensity>3</intensity>
+                                <reflectivity>400</reflectivity>
+                                <speed>0.05</speed>
+                                <x-speed>0.3</x-speed>
+                                <y-speed>0.3</y-speed>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5620</x>
+                        <y>540</y>
+                        <z>0</z>
+                        <width>237.013168335</width>
+                        <height>124.431907654</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1384,28 +1421,6 @@
                         <depth>0</depth>
                         <hotspotX>0.501960814</hotspotX>
                         <hotspotY>0.501976311</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Choza2" uid="891">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>5619</x>
-                        <y>467</y>
-                        <z>0</z>
-                        <width>120</width>
-                        <height>135</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501298726</hotspotX>
-                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -3446,6 +3461,101 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PortalNivelesEfecto" uid="928">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="WaterBackground">
+                            <parameters>
+                                <angle>11</angle>
+                                <delta>40</delta>
+                                <emboss>0.3</emboss>
+                                <frequency>4</frequency>
+                                <intensity>3</intensity>
+                                <reflectivity>400</reflectivity>
+                                <speed>0.05</speed>
+                                <x-speed>0.3</x-speed>
+                                <y-speed>0.3</y-speed>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5652</x>
+                        <y>541</y>
+                        <z>0</z>
+                        <width>237.013000488</width>
+                        <height>135.21887207</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ParedFinalPortal" uid="891">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5707.091796875</x>
+                        <y>543.681762695</y>
+                        <z>0</z>
+                        <width>41.803710938</width>
+                        <height>115.560974121</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ParedFinalPortal" uid="929">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5646.279296875</x>
+                        <y>488.757568359</y>
+                        <z>0</z>
+                        <width>17.078111649</width>
+                        <height>99.939849854</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-1.544417977</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
