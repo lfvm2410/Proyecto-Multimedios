@@ -715,9 +715,6 @@
                     <param id="3" name="Volume">-8</param>
                     <param id="1" name="Tag (optional)">&quot;SonidoFondoNivel1_2&quot;</param>
                 </action>
-                <action id="-16" name="Set opacity" sid="2568185129696525" type="ObstaculoInvisibleSelva2">
-                    <param id="0" name="Opacity">0</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="2936124164361993">

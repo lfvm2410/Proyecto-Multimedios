@@ -1912,7 +1912,7 @@
                 </instance>
                 <instance type="ObstaculoInvisibleSelva2" uid="815">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -1928,10 +1928,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>4011.796875</x>
-                        <y>516.83996582</y>
+                        <y>516.516235352</y>
                         <z>0</z>
                         <width>93.030029297</width>
-                        <height>-1.268371582</height>
+                        <height>-3.388977051</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
