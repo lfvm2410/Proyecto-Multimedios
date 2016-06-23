@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosNivel2</name>
+    <events>
+        <event-block sid="6529248300744864">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="3362535678699587" type="ChiskyNivel2" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6153838226211282" type="ChiskyNivel2">
+                    <param id="0" name="Animation">&quot;Corriendo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2656101288622603">
+            <conditions>
+                <condition id="2" name="Key is down" sid="3152565260227693" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3544302506469971" type="ChiskyNivel2">
+                    <param id="0" name="Animation">&quot;Brincando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2553013349848054">
+            <conditions>
+                <condition id="2" name="Key is down" sid="4634401470640997" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="1313585700676405" type="ChiskyNivel2">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6792100206522816">
+            <conditions>
+                <condition id="2" name="Key is down" sid="9538566207252935" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="8435299629752547" type="ChiskyNivel2">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4921373800502353">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9927141783784218" type="ChiskyNivel2">
+                    <param id="0" name="Object">Espinas</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="5439610712781927" type="ChiskyNivel2">
+                    <param id="0" name="X">247</param>
+                    <param id="1" name="Y">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
