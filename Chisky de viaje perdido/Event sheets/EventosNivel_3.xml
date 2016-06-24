@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosNivel_3</name>
+    <events>
+        <variable constant="0" name="AciertosNivel3" sid="2095872265760286" static="0" type="number">0</variable>
+        <variable constant="0" name="cargarNivel3" sid="6242386015965999" static="0" type="number">0</variable>
+        <variable constant="0" name="preguntaNivel3" sid="6281608750307475" static="0" type="number">0</variable>
+        <event-block sid="3639491415521985">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8659059891705952" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">PalancaN3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="498256009238248" type="PalancaN3">
+                    <param id="0" name="Animation">&quot;Movida&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="6750064105843222" type="System">
+                    <param id="0" name="Variable">cargarNivel3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="606824423152535" type="Pregunta1Nivel3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2739286016782413" type="FondoPreguntaN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4921692918062029" type="pregunta1AN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2080648201121832" type="pregunta1BN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="502042319489163" type="pregunta1CN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7236139458948786" type="pregunta1DN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5981727887008694" type="TxtProgressN3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="4471760102713408" type="TextoProgressN3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="1" name="Set visible" sid="5722910009028157" type="ProgressBarN3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3244734991672237" type="TextN3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8913436084630533" type="HablaChiskyN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2175443882942725">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5906736473901187" type="System">
+                    <param id="0" name="Variable">cargarNivel3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6826341776928646">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="9721789546703137" type="System">
+                            <param id="0" name="Object">ProgressBarN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="1325300887757129" type="TextoProgressN3">
+                            <param id="0" name="Text">round(ProgressBarN3.Progress+0.5)</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="8816243240102717" type="ProgressBarN3">
+                            <param id="0" name="Value">ProgressBarN3.Progress+0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1244894678661648">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="9553663752079447" type="System">
+                    <param id="0" name="First value">ProgressBarN3.Progress</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1130769682082801" type="System">
+                    <param id="0" name="Variable">cargarNivel3</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="1" name="Set visible" sid="2757893194628419" type="ProgressBarN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8637687075083118" type="TxtProgressN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3494597744399009" type="TextoProgressN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5193005683373696" type="TextN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="346163853347291" type="PalancaN3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="1641936815230199">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="862683741519852" type="System">
+                            <param id="0" name="Variable">cargarNivel3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4202586440027567" type="System">
+                            <param id="0" name="Variable">preguntaNivel3</param>
+                            <param id="1" name="Value">round(random(1,7))</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="3830190070293388" type="Pregunta1Nivel3">
+                            <param id="0" name="Animation">&quot;pregunta&quot;&amp;preguntaNivel3</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5302118956976726" type="pregunta1AN3">
+                            <param id="0" name="Animation">&quot;pregunta&quot;&amp;preguntaNivel3&amp;&quot;A&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="6608840992413272" type="pregunta1BN3">
+                            <param id="0" name="Animation">&quot;pregunta&quot;&amp;preguntaNivel3&amp;&quot;B&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="8090634024900855" type="pregunta1CN3">
+                            <param id="0" name="Animation">&quot;pregunta&quot;&amp;preguntaNivel3&amp;&quot;C&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5313209050238284" type="pregunta1DN3">
+                            <param id="0" name="Animation">&quot;pregunta&quot;&amp;preguntaNivel3&amp;&quot;D&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="839046738330216" type="Pregunta1Nivel3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7853495911483589" type="FondoPreguntaN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7775901639976138" type="pregunta1AN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6582926133709024" type="pregunta1BN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4304654991256627" type="pregunta1CN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2060053382183472" type="pregunta1DN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2260492735506619" type="System">
+                            <param id="0" name="Variable">cargarNivel3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="5680389712256636" type="ProgressBarN3">
+                            <param id="0" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8601391591827549">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="7153117120708886" type="Mouse">
+                    <param id="0" name="Object">pregunta1AN3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="2611211743711283" type="pregunta1AN3">
+                    <param id="0" name="Scale">1.1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="4553566926808223">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="6067545087818056" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pregunta1AN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="4936619916241842" type="System">
+                            <param id="0" name="Variable">AciertosNivel3</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8609745288539404" type="PalancaN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4449769311193419">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="2797646683989387" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pregunta1AN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="911348721166735" type="System">
+                            <param id="0" name="Variable">AciertosNivel3</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7742973464337586" type="PalancaN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9100325953508252">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="7226251034863767" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pregunta1AN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="6533514278408282" type="System">
+                            <param id="0" name="Variable">AciertosNivel3</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4795170602090736" type="PalancaN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="346748321802107">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="2314146772379984" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pregunta1AN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="8229141908953301" type="System">
+                            <param id="0" name="Variable">AciertosNivel3</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2768996996831579" type="PalancaN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3679836933588502">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="9139889095868369" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pregunta1AN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="5206406563079108" type="System">
+                            <param id="0" name="Variable">AciertosNivel3</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4591382740868804" type="PalancaN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8104839855266677">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="8503840710261919" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pregunta1AN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="5328656068096628" type="System">
+                            <param id="0" name="Variable">AciertosNivel3</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="1391196144766021" type="PalancaN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1790862281699578">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="2399079717808909" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pregunta1AN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="3194171411343679" type="System">
+                            <param id="0" name="Variable">AciertosNivel3</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9911494090607371" type="PalancaN3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3302047954750705">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="6559597193495938" type="Mouse">
+                    <param id="0" name="Object">pregunta1BN3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="4919641838793108" type="pregunta1BN3">
+                    <param id="0" name="Scale">1.1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="6754832675321557">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="2634695722319045" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pregunta1BN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="8442832235097146" type="System">
+                            <param id="0" name="Variable">accesoNiveles</param>
+                            <param id="1" name="Value">-5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1760463909859301">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="173550338337215" type="Mouse">
+                    <param id="0" name="Object">pregunta1CN3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="3918998457926846" type="pregunta1CN3">
+                    <param id="0" name="Scale">1.1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="758426143613191">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="6553173078871602" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pregunta1CN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="1445921874384598" type="System">
+                            <param id="0" name="Variable">accesoNiveles</param>
+                            <param id="1" name="Value">-5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2059808604372011">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="292504910252642" type="Mouse">
+                    <param id="0" name="Object">pregunta1DN3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="5696772989104082" type="pregunta1DN3">
+                    <param id="0" name="Scale">1.1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="549547043670557">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="8058580161882238" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pregunta1DN3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="2104492701104057" type="System">
+                            <param id="0" name="Variable">accesoNiveles</param>
+                            <param id="1" name="Value">-5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4167619490935147">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9636810526690526" type="Mouse">
+                    <param id="0" name="Object">ScaleNivel3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="9030070262562467" type="pregunta1AN3">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="4440269930366541" type="pregunta1BN3">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="8960236364798888" type="pregunta1CN3">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="3268260075116393" type="pregunta1DN3">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -18,6 +18,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
         <plugin author="Scirra" id="video" version="1">Video</plugin>
     </used-plugins>
     <used-behaviors>
@@ -4139,6 +4140,1391 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="FondoN3" sid="9372283725698239">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="993037395215022" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Desktop\Docs del Proyecto de Multi\Imagenes del nivel 3\Fondo.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TítuloN3" sid="11954931856468">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3497549567822032" speed="5">
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\Título Nivel3.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.0302909" />
+                            <point x="0.98282" y="0.152067" />
+                            <point x="1" y="0.5" />
+                            <point x="0.987983" y="0.882726" />
+                            <point x="0.5" y="0.900123" />
+                            <point x="0.0171803" y="0.847933" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PalancaN3" sid="8925151647841222">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Normal" pingpong="0" repeatcount="1" repeatto="0" sid="3286845204550884" speed="5">
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.50066" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Palanca\P1.png">
+                        <collision-poly>
+                            <point x="0.0992366" y="0.0515192" />
+                            <point x="0.498728" y="0.00396301" />
+                            <point x="0.900763" y="0.0515192" />
+                            <point x="0.994911" y="0.499339" />
+                            <point x="0.941476" y="0.969617" />
+                            <point x="0.498728" y="0.996037" />
+                            <point x="0.0610687" y="0.968296" />
+                            <point x="0.0101781" y="0.499339" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="7" loop="0" name="Movida" pingpong="0" repeatcount="1" repeatto="0" sid="3662578172968531" speed="5">
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.50066" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Palanca\P1.png">
+                        <collision-poly>
+                            <point x="0.0992366" y="0.0515192" />
+                            <point x="0.498728" y="0.00396301" />
+                            <point x="0.900763" y="0.0515192" />
+                            <point x="0.994911" y="0.499339" />
+                            <point x="0.941476" y="0.969617" />
+                            <point x="0.498728" y="0.996037" />
+                            <point x="0.0610687" y="0.968296" />
+                            <point x="0.0101781" y="0.499339" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.50066" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Palanca\P2.png">
+                        <collision-poly>
+                            <point x="0.129771" y="0.0673712" />
+                            <point x="0.498728" y="0.0528402" />
+                            <point x="0.870229" y="0.0673712" />
+                            <point x="0.994911" y="0.499339" />
+                            <point x="0.941476" y="0.969617" />
+                            <point x="0.498728" y="0.996037" />
+                            <point x="0.0610687" y="0.968296" />
+                            <point x="0.0101781" y="0.499339" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.50066" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Palanca\P3.png">
+                        <collision-poly>
+                            <point x="0.229008" y="0.11889" />
+                            <point x="0.498728" y="0.108322" />
+                            <point x="0.760814" y="0.124174" />
+                            <point x="0.994911" y="0.499339" />
+                            <point x="0.941476" y="0.969617" />
+                            <point x="0.498728" y="0.996037" />
+                            <point x="0.0610687" y="0.968296" />
+                            <point x="0.0101781" y="0.499339" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.50066" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Palanca\P5.png">
+                        <collision-poly>
+                            <point x="0.435115" y="0.225892" />
+                            <point x="0.562341" y="0.227213" />
+                            <point x="0.994911" y="0.499339" />
+                            <point x="0.941476" y="0.969617" />
+                            <point x="0.498728" y="0.996037" />
+                            <point x="0.0610687" y="0.968296" />
+                            <point x="0.0101781" y="0.499339" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.50066" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Palanca\P10.png">
+                        <collision-poly>
+                            <point x="0.0559796" y="0.0290621" />
+                            <point x="0.498728" y="0.00396301" />
+                            <point x="0.941476" y="0.0303831" />
+                            <point x="0.989822" y="0.499339" />
+                            <point x="0.613232" y="0.799207" />
+                            <point x="0.386768" y="0.799207" />
+                            <point x="0.00254453" y="0.499339" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.50066" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Palanca\P11.png">
+                        <collision-poly>
+                            <point x="0.0559796" y="0.0290621" />
+                            <point x="0.498728" y="0.00396301" />
+                            <point x="0.941476" y="0.0303831" />
+                            <point x="0.989822" y="0.499339" />
+                            <point x="0.755725" y="0.873184" />
+                            <point x="0.498728" y="0.885073" />
+                            <point x="0.249364" y="0.870542" />
+                            <point x="0.00254453" y="0.499339" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.50066" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Palanca\P1.png">
+                        <collision-poly>
+                            <point x="0.0992366" y="0.0515192" />
+                            <point x="0.498728" y="0.00396301" />
+                            <point x="0.900763" y="0.0515192" />
+                            <point x="0.994911" y="0.499339" />
+                            <point x="0.941476" y="0.969617" />
+                            <point x="0.498728" y="0.996037" />
+                            <point x="0.0610687" y="0.968296" />
+                            <point x="0.0101781" y="0.499339" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ChiskyN3" sid="8693461421551768">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4561224112833751" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Personaje (1)\ChiskyDePie.png">
+                        <collision-poly>
+                            <point x="0.822259" y="0.5" />
+                            <point x="0.885382" y="0.945325" />
+                            <point x="0.5" y="0.982567" />
+                            <point x="0.460133" y="0.780507" />
+                            <point x="0.252492" y="0.5" />
+                            <point x="0.0714286" y="0.0340729" />
+                            <point x="0.5" y="0.160856" />
+                            <point x="0.745847" y="0.121236" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="preguntas" sid="491619638409149">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549318051822281" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pregunta1Nivel3" sid="626746171516364">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="pregunta1" pingpong="0" repeatcount="1" repeatto="0" sid="2948623529954909" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\preg 1.png">
+                        <collision-poly>
+                            <point x="0.0234807" y="0.0745614" />
+                            <point x="0.5" y="0.0614035" />
+                            <point x="0.968232" y="0.100877" />
+                            <point x="0.990331" y="0.5" />
+                            <point x="0.895028" y="0.666667" />
+                            <point x="0.5" y="0.912281" />
+                            <point x="0.111878" y="0.644737" />
+                            <point x="0.0331492" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="pregunta2" pingpong="0" repeatcount="1" repeatto="0" sid="8794697939175935" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\preg 2.png">
+                        <collision-poly>
+                            <point x="0.0172018" y="0.0672646" />
+                            <point x="0.5" y="0.058296" />
+                            <point x="0.979358" y="0.0807175" />
+                            <point x="0.866973" y="0.497758" />
+                            <point x="0.870413" y="0.493274" />
+                            <point x="0.5" y="0.941704" />
+                            <point x="0.173165" y="0.32287" />
+                            <point x="0.146789" y="0.497758" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="pregunta3" pingpong="0" repeatcount="1" repeatto="0" sid="3546329093220962" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\preg 3.png">
+                        <collision-poly>
+                            <point x="0.0193237" y="0.0550459" />
+                            <point x="0.972625" y="0.0779817" />
+                            <point x="0.830918" y="0.5" />
+                            <point x="0.826087" y="0.504587" />
+                            <point x="0.499195" y="0.899083" />
+                            <point x="0.172303" y="0.509174" />
+                            <point x="0.128824" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="pregunta4" pingpong="0" repeatcount="1" repeatto="0" sid="6120978031806735" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\preg 4.png">
+                        <collision-poly>
+                            <point x="0.0311987" y="0.104396" />
+                            <point x="0.499179" y="0.0934066" />
+                            <point x="0.960591" y="0.131868" />
+                            <point x="0.891626" y="0.5" />
+                            <point x="0.889984" y="0.631868" />
+                            <point x="0.499179" y="0.862637" />
+                            <point x="0.106732" y="0.642857" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="pregunta5" pingpong="0" repeatcount="1" repeatto="0" sid="2464116431138779" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\preg 5.png">
+                        <collision-poly>
+                            <point x="0.0234375" y="0.103448" />
+                            <point x="0.5" y="0.0775862" />
+                            <point x="0.974609" y="0.112069" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.960938" y="0.827586" />
+                            <point x="0.5" y="0.922414" />
+                            <point x="0.0410156" y="0.818965" />
+                            <point x="0.0429688" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="pregunta6" pingpong="0" repeatcount="1" repeatto="0" sid="9291384925263548" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\preg 6.png">
+                        <collision-poly>
+                            <point x="0.0207156" y="0.0670732" />
+                            <point x="0.499058" y="0.134146" />
+                            <point x="0.975518" y="0.0792683" />
+                            <point x="0.80791" y="0.5" />
+                            <point x="0.798493" y="0.347561" />
+                            <point x="0.499058" y="0.939024" />
+                            <point x="0.146893" y="0.52439" />
+                            <point x="0.145009" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="pregunta7" pingpong="0" repeatcount="1" repeatto="0" sid="1456779204999604" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\preg 7.png">
+                        <collision-poly>
+                            <point x="0.0172911" y="0.103448" />
+                            <point x="0.979827" y="0.12069" />
+                            <point x="0.985591" y="0.5" />
+                            <point x="0.919308" y="0.517241" />
+                            <point x="0.5" y="0.931035" />
+                            <point x="0.0821326" y="0.508621" />
+                            <point x="0.0331412" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pregunta1AN3" sid="1217554817392605">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="3" loop="0" name="pregunta1A" pingpong="0" repeatcount="1" repeatto="0" sid="6580141446070469" speed="5">
+                    <frame duration="1" hotspotX="0.503759" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 1 preg 1.png">
+                        <collision-poly>
+                            <point x="0.0977444" y="0.185714" />
+                            <point x="0.496241" y="0.114286" />
+                            <point x="0.849624" y="0.285714" />
+                            <point x="0.887218" y="0.5" />
+                            <point x="0.87218" y="0.757143" />
+                            <point x="0.496241" y="0.8" />
+                            <point x="0.150376" y="0.714286" />
+                            <point x="0.0902256" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50289" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 1 preg 1.png">
+                        <collision-poly>
+                            <point x="0.0977444" y="0.185714" />
+                            <point x="0.496241" y="0.114286" />
+                            <point x="0.849624" y="0.285714" />
+                            <point x="0.887218" y="0.5" />
+                            <point x="0.87218" y="0.757143" />
+                            <point x="0.496241" y="0.8" />
+                            <point x="0.150376" y="0.714286" />
+                            <point x="0.0902256" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503759" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 1 preg 1.png">
+                        <collision-poly>
+                            <point x="0.0977444" y="0.185714" />
+                            <point x="0.496241" y="0.114286" />
+                            <point x="0.849624" y="0.285714" />
+                            <point x="0.887218" y="0.5" />
+                            <point x="0.87218" y="0.757143" />
+                            <point x="0.496241" y="0.8" />
+                            <point x="0.150376" y="0.714286" />
+                            <point x="0.0902256" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta2A" pingpong="0" repeatcount="1" repeatto="0" sid="6072018257291259" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 1 preg 2.png">
+                        <collision-poly>
+                            <point x="0.423957" y="0.466642" />
+                            <point x="0.499262" y="0.460712" />
+                            <point x="0.567183" y="0.475537" />
+                            <point x="0.576043" y="0.499259" />
+                            <point x="0.57309" y="0.530393" />
+                            <point x="0.499262" y="0.52891" />
+                            <point x="0.434293" y="0.52298" />
+                            <point x="0.422481" y="0.499259" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.423957" y="0.466642" />
+                            <point x="0.499262" y="0.460712" />
+                            <point x="0.567183" y="0.475537" />
+                            <point x="0.576043" y="0.499259" />
+                            <point x="0.57309" y="0.530393" />
+                            <point x="0.499262" y="0.52891" />
+                            <point x="0.434293" y="0.52298" />
+                            <point x="0.422481" y="0.499259" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.423957" y="0.466642" />
+                            <point x="0.499262" y="0.460712" />
+                            <point x="0.567183" y="0.475537" />
+                            <point x="0.576043" y="0.499259" />
+                            <point x="0.57309" y="0.530393" />
+                            <point x="0.499262" y="0.52891" />
+                            <point x="0.434293" y="0.52298" />
+                            <point x="0.422481" y="0.499259" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta3A" pingpong="0" repeatcount="1" repeatto="0" sid="1411036514105274" speed="5">
+                    <frame duration="1" hotspotX="0.505" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 1 preg 3.png">
+                        <collision-poly>
+                            <point x="0.107438" y="0.185714" />
+                            <point x="0.495868" y="0.142857" />
+                            <point x="0.842975" y="0.271429" />
+                            <point x="0.900826" y="0.5" />
+                            <point x="0.867769" y="0.771429" />
+                            <point x="0.495868" y="0.814286" />
+                            <point x="0.165289" y="0.714286" />
+                            <point x="0.0991736" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504167" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.107438" y="0.185714" />
+                            <point x="0.495868" y="0.142857" />
+                            <point x="0.842975" y="0.271429" />
+                            <point x="0.900826" y="0.5" />
+                            <point x="0.867769" y="0.771429" />
+                            <point x="0.495868" y="0.814286" />
+                            <point x="0.165289" y="0.714286" />
+                            <point x="0.0991736" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.107438" y="0.185714" />
+                            <point x="0.495868" y="0.142857" />
+                            <point x="0.842975" y="0.271429" />
+                            <point x="0.900826" y="0.5" />
+                            <point x="0.867769" y="0.771429" />
+                            <point x="0.495868" y="0.814286" />
+                            <point x="0.165289" y="0.714286" />
+                            <point x="0.0991736" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta4A" pingpong="0" repeatcount="1" repeatto="0" sid="7951513350014588" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 1 preg 4.png">
+                        <collision-poly>
+                            <point x="0.068662" y="0.317073" />
+                            <point x="0.5" y="0.0894309" />
+                            <point x="0.892606" y="0.495935" />
+                            <point x="0.955986" y="0.495935" />
+                            <point x="0.96831" y="0.853659" />
+                            <point x="0.5" y="0.894309" />
+                            <point x="0.0352113" y="0.837398" />
+                            <point x="0.0299296" y="0.495935" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.068662" y="0.317073" />
+                            <point x="0.5" y="0.0894309" />
+                            <point x="0.892606" y="0.495935" />
+                            <point x="0.955986" y="0.495935" />
+                            <point x="0.96831" y="0.853659" />
+                            <point x="0.5" y="0.894309" />
+                            <point x="0.0352113" y="0.837398" />
+                            <point x="0.0299296" y="0.495935" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667">
+                        <collision-poly>
+                            <point x="0.068662" y="0.317073" />
+                            <point x="0.5" y="0.0894309" />
+                            <point x="0.892606" y="0.495935" />
+                            <point x="0.955986" y="0.495935" />
+                            <point x="0.96831" y="0.853659" />
+                            <point x="0.5" y="0.894309" />
+                            <point x="0.0352113" y="0.837398" />
+                            <point x="0.0299296" y="0.495935" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta5A" pingpong="0" repeatcount="1" repeatto="0" sid="4652760735577718" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 1 preg 5.png">
+                        <collision-poly>
+                            <point x="0.0429448" y="0.191781" />
+                            <point x="0.5" y="0.191781" />
+                            <point x="0.941718" y="0.260274" />
+                            <point x="0.957055" y="0.808219" />
+                            <point x="0.5" y="0.794521" />
+                            <point x="0.0613497" y="0.726027" />
+                            <point x="0.0245399" y="0.493151" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0429448" y="0.191781" />
+                            <point x="0.5" y="0.191781" />
+                            <point x="0.941718" y="0.260274" />
+                            <point x="0.957055" y="0.808219" />
+                            <point x="0.5" y="0.794521" />
+                            <point x="0.0613497" y="0.726027" />
+                            <point x="0.0245399" y="0.493151" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0429448" y="0.191781" />
+                            <point x="0.5" y="0.191781" />
+                            <point x="0.941718" y="0.260274" />
+                            <point x="0.957055" y="0.808219" />
+                            <point x="0.5" y="0.794521" />
+                            <point x="0.0613497" y="0.726027" />
+                            <point x="0.0245399" y="0.493151" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta6A" pingpong="0" repeatcount="1" repeatto="0" sid="3439369748130987" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 1 preg 6.png">
+                        <collision-poly>
+                            <point x="0.0600858" y="0.194444" />
+                            <point x="0.497854" y="0.125" />
+                            <point x="0.909871" y="0.291667" />
+                            <point x="0.948498" y="0.5" />
+                            <point x="0.927039" y="0.763889" />
+                            <point x="0.497854" y="0.805556" />
+                            <point x="0.0858369" y="0.722222" />
+                            <point x="0.0343348" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0600858" y="0.194444" />
+                            <point x="0.497854" y="0.125" />
+                            <point x="0.909871" y="0.291667" />
+                            <point x="0.948498" y="0.5" />
+                            <point x="0.927039" y="0.763889" />
+                            <point x="0.497854" y="0.805556" />
+                            <point x="0.0858369" y="0.722222" />
+                            <point x="0.0343348" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0600858" y="0.194444" />
+                            <point x="0.497854" y="0.125" />
+                            <point x="0.909871" y="0.291667" />
+                            <point x="0.948498" y="0.5" />
+                            <point x="0.927039" y="0.763889" />
+                            <point x="0.497854" y="0.805556" />
+                            <point x="0.0858369" y="0.722222" />
+                            <point x="0.0343348" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta7A" pingpong="0" repeatcount="1" repeatto="0" sid="6546457993518976" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 1 preg 7.png">
+                        <collision-poly>
+                            <point x="0.0419162" y="0.114754" />
+                            <point x="0.5" y="0.0901639" />
+                            <point x="0.949102" y="0.139344" />
+                            <point x="0.739521" y="0.5" />
+                            <point x="0.814371" y="0.491803" />
+                            <point x="0.5" y="0.893443" />
+                            <point x="0.188623" y="0.483607" />
+                            <point x="0.356287" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0419162" y="0.114754" />
+                            <point x="0.5" y="0.0901639" />
+                            <point x="0.949102" y="0.139344" />
+                            <point x="0.739521" y="0.5" />
+                            <point x="0.814371" y="0.491803" />
+                            <point x="0.5" y="0.893443" />
+                            <point x="0.188623" y="0.483607" />
+                            <point x="0.356287" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0419162" y="0.114754" />
+                            <point x="0.5" y="0.0901639" />
+                            <point x="0.949102" y="0.139344" />
+                            <point x="0.739521" y="0.5" />
+                            <point x="0.814371" y="0.491803" />
+                            <point x="0.5" y="0.893443" />
+                            <point x="0.188623" y="0.483607" />
+                            <point x="0.356287" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FondoPreguntaN3" sid="3728424336845844">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8065945264954666" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pregunta1BN3" sid="8082532897391446">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="3" loop="0" name="pregunta1B" pingpong="0" repeatcount="1" repeatto="0" sid="9362481645159877" speed="5">
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.516667" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 2 preg 1.png">
+                        <collision-poly>
+                            <point x="0.0521739" y="0.105263" />
+                            <point x="0.495652" y="0.0350877" />
+                            <point x="0.895652" y="0.210526" />
+                            <point x="0.947826" y="0.491228" />
+                            <point x="0.930435" y="0.859649" />
+                            <point x="0.495652" y="0.842105" />
+                            <point x="0.113043" y="0.77193" />
+                            <point x="0.0434783" y="0.491228" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503448" hotspotY="0.522222">
+                        <collision-poly>
+                            <point x="0.0521739" y="0.105263" />
+                            <point x="0.495652" y="0.0350877" />
+                            <point x="0.895652" y="0.210526" />
+                            <point x="0.947826" y="0.491228" />
+                            <point x="0.930435" y="0.859649" />
+                            <point x="0.495652" y="0.842105" />
+                            <point x="0.113043" y="0.77193" />
+                            <point x="0.0434783" y="0.491228" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.516667">
+                        <collision-poly>
+                            <point x="0.0521739" y="0.105263" />
+                            <point x="0.495652" y="0.0350877" />
+                            <point x="0.895652" y="0.210526" />
+                            <point x="0.947826" y="0.491228" />
+                            <point x="0.930435" y="0.859649" />
+                            <point x="0.495652" y="0.842105" />
+                            <point x="0.113043" y="0.77193" />
+                            <point x="0.0434783" y="0.491228" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta2B" pingpong="0" repeatcount="1" repeatto="0" sid="4985900800939977" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 2 preg 2.png">
+                        <collision-poly>
+                            <point x="0.0112903" y="0.0648148" />
+                            <point x="0.5" y="0.0277778" />
+                            <point x="0.977419" y="0.12963" />
+                            <point x="0.698387" y="0.5" />
+                            <point x="0.91129" y="0.490741" />
+                            <point x="0.5" y="0.925926" />
+                            <point x="0.0919355" y="0.472222" />
+                            <point x="0.377419" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.0112903" y="0.0648148" />
+                            <point x="0.5" y="0.0277778" />
+                            <point x="0.977419" y="0.12963" />
+                            <point x="0.698387" y="0.5" />
+                            <point x="0.91129" y="0.490741" />
+                            <point x="0.5" y="0.925926" />
+                            <point x="0.0919355" y="0.472222" />
+                            <point x="0.377419" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667">
+                        <collision-poly>
+                            <point x="0.0112903" y="0.0648148" />
+                            <point x="0.5" y="0.0277778" />
+                            <point x="0.977419" y="0.12963" />
+                            <point x="0.698387" y="0.5" />
+                            <point x="0.91129" y="0.490741" />
+                            <point x="0.5" y="0.925926" />
+                            <point x="0.0919355" y="0.472222" />
+                            <point x="0.377419" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta3B" pingpong="0" repeatcount="1" repeatto="0" sid="4237691725675157" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 2 preg 3.png">
+                        <collision-poly>
+                            <point x="0.0165094" y="0.118644" />
+                            <point x="0.5" y="0.0847458" />
+                            <point x="0.96934" y="0.220339" />
+                            <point x="0.988208" y="0.491525" />
+                            <point x="0.974057" y="0.813559" />
+                            <point x="0.5" y="0.728814" />
+                            <point x="0.0330189" y="0.762712" />
+                            <point x="0.00235849" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0165094" y="0.118644" />
+                            <point x="0.5" y="0.0847458" />
+                            <point x="0.96934" y="0.220339" />
+                            <point x="0.988208" y="0.491525" />
+                            <point x="0.974057" y="0.813559" />
+                            <point x="0.5" y="0.728814" />
+                            <point x="0.0330189" y="0.762712" />
+                            <point x="0.00235849" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0165094" y="0.118644" />
+                            <point x="0.5" y="0.0847458" />
+                            <point x="0.96934" y="0.220339" />
+                            <point x="0.988208" y="0.491525" />
+                            <point x="0.974057" y="0.813559" />
+                            <point x="0.5" y="0.728814" />
+                            <point x="0.0330189" y="0.762712" />
+                            <point x="0.00235849" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta4B" pingpong="0" repeatcount="1" repeatto="0" sid="8641252998593089" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 2 preg 4.png">
+                        <collision-poly>
+                            <point x="0.0125261" y="0.0550459" />
+                            <point x="0.498956" y="0.0183486" />
+                            <point x="0.974948" y="0.110092" />
+                            <point x="0.866388" y="0.495413" />
+                            <point x="0.878914" y="0.46789" />
+                            <point x="0.498956" y="0.944954" />
+                            <point x="0.0960334" y="0.577982" />
+                            <point x="0.112735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.0125261" y="0.0550459" />
+                            <point x="0.498956" y="0.0183486" />
+                            <point x="0.974948" y="0.110092" />
+                            <point x="0.866388" y="0.495413" />
+                            <point x="0.878914" y="0.46789" />
+                            <point x="0.498956" y="0.944954" />
+                            <point x="0.0960334" y="0.577982" />
+                            <point x="0.112735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667">
+                        <collision-poly>
+                            <point x="0.0125261" y="0.0550459" />
+                            <point x="0.498956" y="0.0183486" />
+                            <point x="0.974948" y="0.110092" />
+                            <point x="0.866388" y="0.495413" />
+                            <point x="0.878914" y="0.46789" />
+                            <point x="0.498956" y="0.944954" />
+                            <point x="0.0960334" y="0.577982" />
+                            <point x="0.112735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta5B" pingpong="0" repeatcount="1" repeatto="0" sid="821499231917609" speed="5">
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 2 preg 5.png">
+                        <collision-poly>
+                            <point x="0.0864198" y="0.205882" />
+                            <point x="0.5" y="0.235294" />
+                            <point x="0.901235" y="0.235294" />
+                            <point x="0.969136" y="0.5" />
+                            <point x="0.950617" y="0.882353" />
+                            <point x="0.5" y="0.867647" />
+                            <point x="0.0802469" y="0.808824" />
+                            <point x="0.00617284" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503448" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0864198" y="0.205882" />
+                            <point x="0.5" y="0.235294" />
+                            <point x="0.901235" y="0.235294" />
+                            <point x="0.969136" y="0.5" />
+                            <point x="0.950617" y="0.882353" />
+                            <point x="0.5" y="0.867647" />
+                            <point x="0.0802469" y="0.808824" />
+                            <point x="0.00617284" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0864198" y="0.205882" />
+                            <point x="0.5" y="0.235294" />
+                            <point x="0.901235" y="0.235294" />
+                            <point x="0.969136" y="0.5" />
+                            <point x="0.950617" y="0.882353" />
+                            <point x="0.5" y="0.867647" />
+                            <point x="0.0802469" y="0.808824" />
+                            <point x="0.00617284" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta6B" pingpong="0" repeatcount="1" repeatto="0" sid="2195961605486423" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 2 preg 6.png">
+                        <collision-poly>
+                            <point x="0.0361757" y="0.205882" />
+                            <point x="0.958656" y="0.235294" />
+                            <point x="0.98708" y="0.5" />
+                            <point x="0.979328" y="0.882353" />
+                            <point x="0.0310078" y="0.823529" />
+                            <point x="0.00516796" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0361757" y="0.205882" />
+                            <point x="0.958656" y="0.235294" />
+                            <point x="0.98708" y="0.5" />
+                            <point x="0.979328" y="0.882353" />
+                            <point x="0.0310078" y="0.823529" />
+                            <point x="0.00516796" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0361757" y="0.205882" />
+                            <point x="0.958656" y="0.235294" />
+                            <point x="0.98708" y="0.5" />
+                            <point x="0.979328" y="0.882353" />
+                            <point x="0.0310078" y="0.823529" />
+                            <point x="0.00516796" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta7B" pingpong="0" repeatcount="1" repeatto="0" sid="1349125682847882" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 2 preg 7.png">
+                        <collision-poly>
+                            <point x="0.029304" y="0.0733945" />
+                            <point x="0.498168" y="0.0183486" />
+                            <point x="0.959707" y="0.100917" />
+                            <point x="0.882784" y="0.495413" />
+                            <point x="0.948718" y="0.87156" />
+                            <point x="0.498168" y="0.917431" />
+                            <point x="0.0549451" y="0.862385" />
+                            <point x="0.0586081" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.029304" y="0.0733945" />
+                            <point x="0.498168" y="0.0183486" />
+                            <point x="0.959707" y="0.100917" />
+                            <point x="0.882784" y="0.495413" />
+                            <point x="0.948718" y="0.87156" />
+                            <point x="0.498168" y="0.917431" />
+                            <point x="0.0549451" y="0.862385" />
+                            <point x="0.0586081" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.029304" y="0.0733945" />
+                            <point x="0.498168" y="0.0183486" />
+                            <point x="0.959707" y="0.100917" />
+                            <point x="0.882784" y="0.495413" />
+                            <point x="0.948718" y="0.87156" />
+                            <point x="0.498168" y="0.917431" />
+                            <point x="0.0549451" y="0.862385" />
+                            <point x="0.0586081" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pregunta1CN3" sid="6557736420421197">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="3" loop="0" name="pregunta1C" pingpong="0" repeatcount="1" repeatto="0" sid="5530915997996777" speed="5">
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 3 preg 1.png">
+                        <collision-poly>
+                            <point x="0.0560748" y="0.107143" />
+                            <point x="0.495327" y="0.0535714" />
+                            <point x="0.88785" y="0.214286" />
+                            <point x="0.953271" y="0.5" />
+                            <point x="0.915888" y="0.839286" />
+                            <point x="0.495327" y="0.892857" />
+                            <point x="0.121495" y="0.767857" />
+                            <point x="0.046729" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503448" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0560748" y="0.107143" />
+                            <point x="0.495327" y="0.0535714" />
+                            <point x="0.88785" y="0.214286" />
+                            <point x="0.953271" y="0.5" />
+                            <point x="0.915888" y="0.839286" />
+                            <point x="0.495327" y="0.892857" />
+                            <point x="0.121495" y="0.767857" />
+                            <point x="0.046729" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0560748" y="0.107143" />
+                            <point x="0.495327" y="0.0535714" />
+                            <point x="0.88785" y="0.214286" />
+                            <point x="0.953271" y="0.5" />
+                            <point x="0.915888" y="0.839286" />
+                            <point x="0.495327" y="0.892857" />
+                            <point x="0.121495" y="0.767857" />
+                            <point x="0.046729" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta2C" pingpong="0" repeatcount="1" repeatto="0" sid="6063260227634845" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 3 preg 2.png">
+                        <collision-poly>
+                            <point x="0.0231481" y="0.0869565" />
+                            <point x="0.965278" y="0.130435" />
+                            <point x="0.958333" y="0.495652" />
+                            <point x="0.863426" y="0.486957" />
+                            <point x="0.5" y="0.921739" />
+                            <point x="0.0972222" y="0.634783" />
+                            <point x="0.0439815" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.0231481" y="0.0869565" />
+                            <point x="0.965278" y="0.130435" />
+                            <point x="0.958333" y="0.495652" />
+                            <point x="0.863426" y="0.486957" />
+                            <point x="0.5" y="0.921739" />
+                            <point x="0.0972222" y="0.634783" />
+                            <point x="0.0439815" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667">
+                        <collision-poly>
+                            <point x="0.0231481" y="0.0869565" />
+                            <point x="0.965278" y="0.130435" />
+                            <point x="0.958333" y="0.495652" />
+                            <point x="0.863426" y="0.486957" />
+                            <point x="0.5" y="0.921739" />
+                            <point x="0.0972222" y="0.634783" />
+                            <point x="0.0439815" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta3C" pingpong="0" repeatcount="1" repeatto="0" sid="6978932772261559" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 3 preg 3.png">
+                        <collision-poly>
+                            <point x="0.0196721" y="0.103448" />
+                            <point x="0.498361" y="0.0172414" />
+                            <point x="0.957377" y="0.224138" />
+                            <point x="0.983607" y="0.5" />
+                            <point x="0.967213" y="0.827586" />
+                            <point x="0.498361" y="0.827586" />
+                            <point x="0.042623" y="0.775862" />
+                            <point x="0.00655738" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0196721" y="0.103448" />
+                            <point x="0.498361" y="0.0172414" />
+                            <point x="0.957377" y="0.224138" />
+                            <point x="0.983607" y="0.5" />
+                            <point x="0.967213" y="0.827586" />
+                            <point x="0.498361" y="0.827586" />
+                            <point x="0.042623" y="0.775862" />
+                            <point x="0.00655738" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0196721" y="0.103448" />
+                            <point x="0.498361" y="0.0172414" />
+                            <point x="0.957377" y="0.224138" />
+                            <point x="0.983607" y="0.5" />
+                            <point x="0.967213" y="0.827586" />
+                            <point x="0.498361" y="0.827586" />
+                            <point x="0.042623" y="0.775862" />
+                            <point x="0.00655738" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta4C" pingpong="0" repeatcount="1" repeatto="0" sid="523988626258873" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 3 preg 4.png">
+                        <collision-poly>
+                            <point x="0.0125261" y="0.0550459" />
+                            <point x="0.498956" y="0.0183486" />
+                            <point x="0.974948" y="0.110092" />
+                            <point x="0.866388" y="0.495413" />
+                            <point x="0.878914" y="0.46789" />
+                            <point x="0.498956" y="0.944954" />
+                            <point x="0.0960334" y="0.577982" />
+                            <point x="0.112735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.0125261" y="0.0550459" />
+                            <point x="0.498956" y="0.0183486" />
+                            <point x="0.974948" y="0.110092" />
+                            <point x="0.866388" y="0.495413" />
+                            <point x="0.878914" y="0.46789" />
+                            <point x="0.498956" y="0.944954" />
+                            <point x="0.0960334" y="0.577982" />
+                            <point x="0.112735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667">
+                        <collision-poly>
+                            <point x="0.0125261" y="0.0550459" />
+                            <point x="0.498956" y="0.0183486" />
+                            <point x="0.974948" y="0.110092" />
+                            <point x="0.866388" y="0.495413" />
+                            <point x="0.878914" y="0.46789" />
+                            <point x="0.498956" y="0.944954" />
+                            <point x="0.0960334" y="0.577982" />
+                            <point x="0.112735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta5C" pingpong="0" repeatcount="1" repeatto="0" sid="5034535796978363" speed="5">
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 3 preg 5.png">
+                        <collision-poly>
+                            <point x="0.0289855" y="0.103448" />
+                            <point x="0.497585" y="0.0344828" />
+                            <point x="0.937198" y="0.224138" />
+                            <point x="0.975845" y="0.5" />
+                            <point x="0.94686" y="0.810345" />
+                            <point x="0.0676328" y="0.758621" />
+                            <point x="0.0144928" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0289855" y="0.103448" />
+                            <point x="0.497585" y="0.0344828" />
+                            <point x="0.937198" y="0.224138" />
+                            <point x="0.975845" y="0.5" />
+                            <point x="0.94686" y="0.810345" />
+                            <point x="0.0676328" y="0.758621" />
+                            <point x="0.0144928" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0289855" y="0.103448" />
+                            <point x="0.497585" y="0.0344828" />
+                            <point x="0.937198" y="0.224138" />
+                            <point x="0.975845" y="0.5" />
+                            <point x="0.94686" y="0.810345" />
+                            <point x="0.0676328" y="0.758621" />
+                            <point x="0.0144928" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta6C" pingpong="0" repeatcount="1" repeatto="0" sid="3732053814024398" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 3 preg 6.png">
+                        <collision-poly>
+                            <point x="0.0197368" y="0.15" />
+                            <point x="0.969298" y="0.233333" />
+                            <point x="0.989035" y="0.5" />
+                            <point x="0.975877" y="0.816667" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.0263158" y="0.8" />
+                            <point x="0.00219298" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0197368" y="0.15" />
+                            <point x="0.969298" y="0.233333" />
+                            <point x="0.989035" y="0.5" />
+                            <point x="0.975877" y="0.816667" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.0263158" y="0.8" />
+                            <point x="0.00219298" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0197368" y="0.15" />
+                            <point x="0.969298" y="0.233333" />
+                            <point x="0.989035" y="0.5" />
+                            <point x="0.975877" y="0.816667" />
+                            <point x="0.5" y="0.616667" />
+                            <point x="0.0263158" y="0.8" />
+                            <point x="0.00219298" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta7C" pingpong="0" repeatcount="1" repeatto="0" sid="7013502636022092" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 3 preg 7.png">
+                        <collision-poly>
+                            <point x="0.0185185" y="0.0642202" />
+                            <point x="0.5" y="0.0458716" />
+                            <point x="0.962963" y="0.12844" />
+                            <point x="0.899471" y="0.495413" />
+                            <point x="0.952381" y="0.834862" />
+                            <point x="0.5" y="0.917431" />
+                            <point x="0.042328" y="0.853211" />
+                            <point x="0.0449735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0185185" y="0.0642202" />
+                            <point x="0.5" y="0.0458716" />
+                            <point x="0.962963" y="0.12844" />
+                            <point x="0.899471" y="0.495413" />
+                            <point x="0.952381" y="0.834862" />
+                            <point x="0.5" y="0.917431" />
+                            <point x="0.042328" y="0.853211" />
+                            <point x="0.0449735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0185185" y="0.0642202" />
+                            <point x="0.5" y="0.0458716" />
+                            <point x="0.962963" y="0.12844" />
+                            <point x="0.899471" y="0.495413" />
+                            <point x="0.952381" y="0.834862" />
+                            <point x="0.5" y="0.917431" />
+                            <point x="0.042328" y="0.853211" />
+                            <point x="0.0449735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pregunta1DN3" sid="6779619130242899">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="3" loop="0" name="pregunta1D" pingpong="0" repeatcount="1" repeatto="0" sid="9460039747676408" speed="5">
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.516667" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 4 preg 1.png">
+                        <collision-poly>
+                            <point x="0.05" y="0.101695" />
+                            <point x="0.5" y="0.0338983" />
+                            <point x="0.9" y="0.20339" />
+                            <point x="0.958333" y="0.491525" />
+                            <point x="0.916667" y="0.830508" />
+                            <point x="0.5" y="0.864407" />
+                            <point x="0.108333" y="0.779661" />
+                            <point x="0.0416667" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503448" hotspotY="0.522222">
+                        <collision-poly>
+                            <point x="0.05" y="0.101695" />
+                            <point x="0.5" y="0.0338983" />
+                            <point x="0.9" y="0.20339" />
+                            <point x="0.958333" y="0.491525" />
+                            <point x="0.916667" y="0.830508" />
+                            <point x="0.5" y="0.864407" />
+                            <point x="0.108333" y="0.779661" />
+                            <point x="0.0416667" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.516667">
+                        <collision-poly>
+                            <point x="0.05" y="0.101695" />
+                            <point x="0.5" y="0.0338983" />
+                            <point x="0.9" y="0.20339" />
+                            <point x="0.958333" y="0.491525" />
+                            <point x="0.916667" y="0.830508" />
+                            <point x="0.5" y="0.864407" />
+                            <point x="0.108333" y="0.779661" />
+                            <point x="0.0416667" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta2D" pingpong="0" repeatcount="1" repeatto="0" sid="9243919961936886" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 4 preg 2.png">
+                        <collision-poly>
+                            <point x="0.0224719" y="0.0733945" />
+                            <point x="0.5" y="0.0366972" />
+                            <point x="0.966292" y="0.110092" />
+                            <point x="0.921348" y="0.495413" />
+                            <point x="0.963483" y="0.880734" />
+                            <point x="0.5" y="0.917431" />
+                            <point x="0.0308989" y="0.899083" />
+                            <point x="0.011236" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.0224719" y="0.0733945" />
+                            <point x="0.5" y="0.0366972" />
+                            <point x="0.966292" y="0.110092" />
+                            <point x="0.921348" y="0.495413" />
+                            <point x="0.963483" y="0.880734" />
+                            <point x="0.5" y="0.917431" />
+                            <point x="0.0308989" y="0.899083" />
+                            <point x="0.011236" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667">
+                        <collision-poly>
+                            <point x="0.0224719" y="0.0733945" />
+                            <point x="0.5" y="0.0366972" />
+                            <point x="0.966292" y="0.110092" />
+                            <point x="0.921348" y="0.495413" />
+                            <point x="0.963483" y="0.880734" />
+                            <point x="0.5" y="0.917431" />
+                            <point x="0.0308989" y="0.899083" />
+                            <point x="0.011236" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta3D" pingpong="0" repeatcount="1" repeatto="0" sid="6229732129620035" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 4 preg 3.png">
+                        <collision-poly>
+                            <point x="0.030137" y="0.169231" />
+                            <point x="0.964384" y="0.2" />
+                            <point x="0.983562" y="0.492308" />
+                            <point x="0.978082" y="0.876923" />
+                            <point x="0.49863" y="0.876923" />
+                            <point x="0.0356164" y="0.8" />
+                            <point x="0.00273973" y="0.492308" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.030137" y="0.169231" />
+                            <point x="0.964384" y="0.2" />
+                            <point x="0.983562" y="0.492308" />
+                            <point x="0.978082" y="0.876923" />
+                            <point x="0.49863" y="0.876923" />
+                            <point x="0.0356164" y="0.8" />
+                            <point x="0.00273973" y="0.492308" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.030137" y="0.169231" />
+                            <point x="0.964384" y="0.2" />
+                            <point x="0.983562" y="0.492308" />
+                            <point x="0.978082" y="0.876923" />
+                            <point x="0.49863" y="0.876923" />
+                            <point x="0.0356164" y="0.8" />
+                            <point x="0.00273973" y="0.492308" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta4D" pingpong="0" repeatcount="1" repeatto="0" sid="476314507578412" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 4 preg 4.png">
+                        <collision-poly>
+                            <point x="0.0154525" y="0.0642202" />
+                            <point x="0.498896" y="0.0458716" />
+                            <point x="0.97351" y="0.110092" />
+                            <point x="0.777042" y="0.495413" />
+                            <point x="0.871965" y="0.46789" />
+                            <point x="0.498896" y="0.917431" />
+                            <point x="0.130243" y="0.458716" />
+                            <point x="0.18543" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.0154525" y="0.0642202" />
+                            <point x="0.498896" y="0.0458716" />
+                            <point x="0.97351" y="0.110092" />
+                            <point x="0.777042" y="0.495413" />
+                            <point x="0.871965" y="0.46789" />
+                            <point x="0.498896" y="0.917431" />
+                            <point x="0.130243" y="0.458716" />
+                            <point x="0.18543" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667">
+                        <collision-poly>
+                            <point x="0.0154525" y="0.0642202" />
+                            <point x="0.498896" y="0.0458716" />
+                            <point x="0.97351" y="0.110092" />
+                            <point x="0.777042" y="0.495413" />
+                            <point x="0.871965" y="0.46789" />
+                            <point x="0.498896" y="0.917431" />
+                            <point x="0.130243" y="0.458716" />
+                            <point x="0.18543" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta5D" pingpong="0" repeatcount="1" repeatto="0" sid="7539106285639505" speed="5">
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 4 preg 5.png">
+                        <collision-poly>
+                            <point x="0.0318725" y="0.133333" />
+                            <point x="0.498008" y="0.0833333" />
+                            <point x="0.948207" y="0.216667" />
+                            <point x="0.98008" y="0.5" />
+                            <point x="0.952191" y="0.8" />
+                            <point x="0.498008" y="0.733333" />
+                            <point x="0.0517928" y="0.783333" />
+                            <point x="0.00398406" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0318725" y="0.133333" />
+                            <point x="0.498008" y="0.0833333" />
+                            <point x="0.948207" y="0.216667" />
+                            <point x="0.98008" y="0.5" />
+                            <point x="0.952191" y="0.8" />
+                            <point x="0.498008" y="0.733333" />
+                            <point x="0.0517928" y="0.783333" />
+                            <point x="0.00398406" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0318725" y="0.133333" />
+                            <point x="0.498008" y="0.0833333" />
+                            <point x="0.948207" y="0.216667" />
+                            <point x="0.98008" y="0.5" />
+                            <point x="0.952191" y="0.8" />
+                            <point x="0.498008" y="0.733333" />
+                            <point x="0.0517928" y="0.783333" />
+                            <point x="0.00398406" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta6D" pingpong="0" repeatcount="1" repeatto="0" sid="9697940021821868" speed="5">
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.516667" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 4 preg 6.png">
+                        <collision-poly>
+                            <point x="0.0432099" y="0.118644" />
+                            <point x="0.919753" y="0.220339" />
+                            <point x="0.969136" y="0.491525" />
+                            <point x="0.932099" y="0.813559" />
+                            <point x="0.5" y="0.898305" />
+                            <point x="0.0864198" y="0.762712" />
+                            <point x="0.00617284" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503448" hotspotY="0.522222">
+                        <collision-poly>
+                            <point x="0.0432099" y="0.118644" />
+                            <point x="0.919753" y="0.220339" />
+                            <point x="0.969136" y="0.491525" />
+                            <point x="0.932099" y="0.813559" />
+                            <point x="0.5" y="0.898305" />
+                            <point x="0.0864198" y="0.762712" />
+                            <point x="0.00617284" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.516667">
+                        <collision-poly>
+                            <point x="0.0432099" y="0.118644" />
+                            <point x="0.919753" y="0.220339" />
+                            <point x="0.969136" y="0.491525" />
+                            <point x="0.932099" y="0.813559" />
+                            <point x="0.5" y="0.898305" />
+                            <point x="0.0864198" y="0.762712" />
+                            <point x="0.00617284" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="pregunta7D" pingpong="0" repeatcount="1" repeatto="0" sid="9205736342591109" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 3\resp 4 preg 7.png">
+                        <collision-poly>
+                            <point x="0.0185185" y="0.0642202" />
+                            <point x="0.5" y="0.0458716" />
+                            <point x="0.962963" y="0.12844" />
+                            <point x="0.896825" y="0.495413" />
+                            <point x="0.949735" y="0.825688" />
+                            <point x="0.5" y="0.917431" />
+                            <point x="0.042328" y="0.853211" />
+                            <point x="0.0449735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0185185" y="0.0642202" />
+                            <point x="0.5" y="0.0458716" />
+                            <point x="0.962963" y="0.12844" />
+                            <point x="0.896825" y="0.495413" />
+                            <point x="0.949735" y="0.825688" />
+                            <point x="0.5" y="0.917431" />
+                            <point x="0.042328" y="0.853211" />
+                            <point x="0.0449735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0185185" y="0.0642202" />
+                            <point x="0.5" y="0.0458716" />
+                            <point x="0.962963" y="0.12844" />
+                            <point x="0.896825" y="0.495413" />
+                            <point x="0.949735" y="0.825688" />
+                            <point x="0.5" y="0.917431" />
+                            <point x="0.042328" y="0.853211" />
+                            <point x="0.0449735" y="0.495413" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBarN3" sid="4371535851774209">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type name="TextoProgressN3" sid="2874145500794834">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TxtProgressN3" sid="4758380493750193">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2888984306398342" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextN3" sid="7270499875995549">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="HablaChiskyN3" sid="1980824618828854">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7091679039654617" speed="5">
+                    <frame duration="1" hotspotX="0.501292" hotspotY="0.5" original-source="C:\Users\Keyner A.V\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Textos\Hale la Palanca.png">
+                        <collision-poly>
+                            <point x="0.0749354" y="0.183544" />
+                            <point x="0.498708" y="0.0759494" />
+                            <point x="0.770026" y="0.563291" />
+                            <point x="0.648579" y="0.5" />
+                            <point x="0.953488" y="0.886076" />
+                            <point x="0.498708" y="0.886076" />
+                            <point x="0.0594315" y="0.85443" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ScaleNivel3" sid="1819244109731928">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7067862199820388" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="InstruccionesNivel3" sid="7458058176153945">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="2634641007225508" speed="5">
+                    <frame duration="1" hotspotX="0.500376" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\TutorialPreguntas.png">
+                        <collision-poly>
+                            <point x="0.00901578" y="0.133333" />
+                            <point x="0.98272" y="0.255556" />
+                            <point x="0.990233" y="0.5" />
+                            <point x="0.983471" y="0.755556" />
+                            <point x="0.499624" y="0.822222" />
+                            <point x="0.014275" y="0.788889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -4152,6 +5538,7 @@
         <layout>VideoHistoriaConquista.xml</layout>
         <layout>InstruccionesNivel1.xml</layout>
         <layout>ResultadosFinalNiveles.xml</layout>
+        <layout>Nivel_3.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>EventosMenú.xml</event-sheet>
@@ -4164,6 +5551,7 @@
         <event-sheet>EventosVideoHistoriaConquista.xml</event-sheet>
         <event-sheet>EventosInstruccionesNivel1.xml</event-sheet>
         <event-sheet>EventosResultadosFinalNiveles.xml</event-sheet>
+        <event-sheet>EventosNivel_3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="910" />
