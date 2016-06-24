@@ -103,7 +103,7 @@
                 <event-block sid="9893654603371644">
                     <conditions>
                         <condition id="3" name="On key released" sid="62070374135298" type="Keyboard">
-                            <param id="0" name="Key">32 (Space)</param>
+                            <param id="0" name="Key">32 (Barra Espaciadora)</param>
                         </condition>
                         <condition id="7" name="Is mirrored" sid="7155401951731371" type="BarcoTutorial" />
                         <condition id="-14" name="Compare variable" sid="8753026816739868" type="System">
@@ -143,7 +143,7 @@
                 <event-block sid="714996952778402">
                     <conditions>
                         <condition id="3" name="On key released" sid="8646471087465772" type="Keyboard">
-                            <param id="0" name="Key">32 (Space)</param>
+                            <param id="0" name="Key">32 (Barra Espaciadora)</param>
                         </condition>
                         <condition id="7" inverted="1" name="Is mirrored" sid="6497967267372021" type="BarcoTutorial" />
                         <condition id="-14" name="Compare variable" sid="9463172321798701" type="System">
