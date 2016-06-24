@@ -4391,28 +4391,22 @@
     <layout-folder expanded="1">
         <layout>Pantalla Inicio.xml</layout>
         <layout>Menú Principal.xml</layout>
-        <layout>Nivel1_1.xml</layout>
-        <layout>Nivel1_2.xml</layout>
         <layout>Tutorial.xml</layout>
         <layout>Creditos.xml</layout>
         <layout>VideoIntro.xml</layout>
         <layout>VideoHistoriaConquista.xml</layout>
         <layout>InstruccionesNivel1.xml</layout>
-        <layout>ResultadosFinalNiveles.xml</layout>
         <layout>Nivel2.xml</layout>
         <layout>Puzzle1.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>EventosMenú.xml</event-sheet>
-        <event-sheet>EventosNivel1_1.xml</event-sheet>
-        <event-sheet>EventosNivel1_2.xml</event-sheet>
         <event-sheet>Eventos_Principal.xml</event-sheet>
         <event-sheet>EventosTutorial.xml</event-sheet>
         <event-sheet>EventosCreditos.xml</event-sheet>
         <event-sheet>EventosVideoIntro.xml</event-sheet>
         <event-sheet>EventosVideoHistoriaConquista.xml</event-sheet>
         <event-sheet>EventosInstruccionesNivel1.xml</event-sheet>
-        <event-sheet>EventosResultadosFinalNiveles.xml</event-sheet>
         <event-sheet>EventosNivel2.xml</event-sheet>
         <event-sheet>EventosPuzzle1.xml</event-sheet>
     </event-folder>
