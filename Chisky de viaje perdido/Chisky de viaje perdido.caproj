@@ -4139,6 +4139,253 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BosqeuNivel" sid="4390311002601087">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="111450587363682" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Bosque  Nivel 2\Bosqeu nivel 2.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.99875" y="0.00166667" />
+                            <point x="0.99875" y="0.998333" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BosqeuNivel2" sid="9701961062138816">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9521171898582281" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Bosque  Nivel 2\Bosqeu nivel 2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0.00125003" y="0.998333" />
+                            <point x="0.00125003" y="0.00166667" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BosqeuNivel6" sid="8093642651593099">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643612129322823" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Bosque  Nivel 2\Bosqeu nivel 2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0.00125003" y="0.998333" />
+                            <point x="0.00125003" y="0.00166667" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ChiskyNivel2" sid="7967835100850825">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="5300537140026331">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="5118066891507864">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Depie" pingpong="0" repeatcount="1" repeatto="0" sid="1838438077802018" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Personaje\ChiskyDePiePer.png">
+                        <collision-poly>
+                            <point x="0.253333" y="0.120635" />
+                            <point x="0.5" y="0.160317" />
+                            <point x="0.93" y="0.0333333" />
+                            <point x="0.748333" y="0.5" />
+                            <point x="0.54" y="0.780952" />
+                            <point x="0.5" y="0.983333" />
+                            <point x="0.113333" y="0.946032" />
+                            <point x="0.176667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="0" name="Corriendo" pingpong="0" repeatcount="1" repeatto="0" sid="6878552398535197" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Personaje\ChiskyCorriendoPer.png">
+                        <collision-poly>
+                            <point x="0.357333" y="0.221122" />
+                            <point x="0.5" y="0.183168" />
+                            <point x="0.930667" y="0.0429043" />
+                            <point x="0.933333" y="0.958746" />
+                            <point x="0.5" y="0.825082" />
+                            <point x="0.185333" y="0.885314" />
+                            <point x="0.246667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Personaje\ChiskyCorriendo4Per1223213.png">
+                        <collision-poly>
+                            <point x="0.501111" y="0.372112" />
+                            <point x="0.5" y="0.105611" />
+                            <point x="0.79" y="0.155941" />
+                            <point x="0.568889" y="0.679868" />
+                            <point x="0.5" y="0.778878" />
+                            <point x="0.171111" y="0.872937" />
+                            <point x="0.377778" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Personaje\ChiskyTransicionPer.png">
+                        <collision-poly>
+                            <point x="0.357333" y="0.221122" />
+                            <point x="0.5" y="0.183168" />
+                            <point x="0.930667" y="0.0429043" />
+                            <point x="0.988" y="0.5" />
+                            <point x="0.741333" y="0.839934" />
+                            <point x="0.5" y="0.821782" />
+                            <point x="0.0826667" y="0.948845" />
+                            <point x="0.3" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Personaje\ChiskyCorriendo4Per1223213.png">
+                        <collision-poly>
+                            <point x="0.29" y="0.215347" />
+                            <point x="0.5" y="0.155941" />
+                            <point x="0.756667" y="0.180693" />
+                            <point x="0.902222" y="0.5" />
+                            <point x="0.553333" y="0.668317" />
+                            <point x="0.5" y="0.89769" />
+                            <point x="0.0311111" y="0.976898" />
+                            <point x="0.234444" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Personaje\ChiskyCorriendo4Per1223213.png">
+                        <collision-poly>
+                            <point x="0.29" y="0.215347" />
+                            <point x="0.5" y="0.155941" />
+                            <point x="0.756667" y="0.180693" />
+                            <point x="0.902222" y="0.5" />
+                            <point x="0.553333" y="0.668317" />
+                            <point x="0.5" y="0.89769" />
+                            <point x="0.0311111" y="0.976898" />
+                            <point x="0.234444" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Personaje\ChiskyDePiePer.png">
+                        <collision-poly>
+                            <point x="0.253333" y="0.120635" />
+                            <point x="0.5" y="0.160317" />
+                            <point x="0.93" y="0.0333333" />
+                            <point x="0.748333" y="0.5" />
+                            <point x="0.54" y="0.780952" />
+                            <point x="0.5" y="0.983333" />
+                            <point x="0.113333" y="0.946032" />
+                            <point x="0.176667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Brincando" pingpong="0" repeatcount="1" repeatto="0" sid="5469727822456591" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Personaje\ChiskySaltandoPer.png">
+                        <collision-poly>
+                            <point x="0.46" y="0.283077" />
+                            <point x="0.5" y="0.167692" />
+                            <point x="0.925" y="0.0461538" />
+                            <point x="0.76125" y="0.5" />
+                            <point x="0.62875" y="0.771538" />
+                            <point x="0.5" y="0.955385" />
+                            <point x="0.335" y="0.793846" />
+                            <point x="0.455" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Personaje\ChiskyDePiePer.png">
+                        <collision-poly>
+                            <point x="0.253333" y="0.120635" />
+                            <point x="0.5" y="0.160317" />
+                            <point x="0.93" y="0.0333333" />
+                            <point x="0.748333" y="0.5" />
+                            <point x="0.54" y="0.780952" />
+                            <point x="0.5" y="0.983333" />
+                            <point x="0.113333" y="0.946032" />
+                            <point x="0.176667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Suelo" sid="4287543799641873">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3052363338294793">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6699777426461857" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pared" sid="6667674678057731">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8441553745405408">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="618885996921958" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bloques" sid="4407154066655131">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="331457890881621">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8145737955153893" speed="5">
+                    <frame duration="1" hotspotX="0.501385" hotspotY="0.501845" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Bloques\nbm, .png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Espinas" sid="1883826401819196">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8378758194814903">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5696833378609882" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.036" />
+                            <point x="1" y="0.032" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="interrogación" sid="117762276706693">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8229984686970966" speed="5">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.507042" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\interrogación.png">
+                        <collision-poly>
+                            <point x="0.338983" y="0.28169" />
+                            <point x="0.491525" y="0.169014" />
+                            <point x="0.677966" y="0.267606" />
+                            <point x="0.813559" y="0.84507" />
+                            <point x="0.491525" y="0.887324" />
+                            <point x="0.305085" y="0.746479" />
+                            <point x="0.237288" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -4152,6 +4399,8 @@
         <layout>VideoHistoriaConquista.xml</layout>
         <layout>InstruccionesNivel1.xml</layout>
         <layout>ResultadosFinalNiveles.xml</layout>
+        <layout>Nivel2.xml</layout>
+        <layout>Puzzle1.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>EventosMenú.xml</event-sheet>
@@ -4164,6 +4413,8 @@
         <event-sheet>EventosVideoHistoriaConquista.xml</event-sheet>
         <event-sheet>EventosInstruccionesNivel1.xml</event-sheet>
         <event-sheet>EventosResultadosFinalNiveles.xml</event-sheet>
+        <event-sheet>EventosNivel2.xml</event-sheet>
+        <event-sheet>EventosPuzzle1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="910" />
