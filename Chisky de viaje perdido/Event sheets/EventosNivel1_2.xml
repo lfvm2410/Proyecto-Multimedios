@@ -1,0 +1,1341 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosNivel1_2</name>
+    <events>
+        <variable constant="0" name="SilencioNivel1_2" sid="5400319133597056" static="0" type="number">0</variable>
+        <variable constant="0" name="puntosErroneosSelva1_2" sid="47290791491209" static="0" type="number">0</variable>
+        <variable constant="0" name="puntosAciertoSelva1_2" sid="9804168718863347" static="0" type="number">0</variable>
+        <event-block sid="1613639133873863">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="4144272210848264" type="Chisky" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6664069582154598" type="Chisky">
+                    <param id="0" name="Animation">&quot;Corriendo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6732491467199162">
+            <conditions>
+                <condition id="2" name="Key is down" sid="9128478693098787" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="7930869180644356" type="Chisky">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3035544762875622">
+            <conditions>
+                <condition id="2" name="Key is down" sid="6577003167735461" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="8928055767334608" type="Chisky">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5827914597554986">
+            <conditions>
+                <condition id="2" name="Key is down" sid="5757105226199017" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3761170851020246" type="Chisky">
+                    <param id="0" name="Animation">&quot;Brincando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="390825784555748">
+            <conditions>
+                <condition id="3" name="On key released" sid="2665150767146867" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="7" name="Is mirrored" sid="9923220972140279" type="Chisky" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5778849221213378" type="Audio">
+                    <param id="0" name="Audio file">Laser</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-12</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8663386445037885" type="Chisky">
+                    <param id="0" name="Object">DisparoBandera</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="8452127597199554" type="DisparoBandera">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8648282812515458">
+            <conditions>
+                <condition id="3" name="On key released" sid="5325293008282971" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="7" inverted="1" name="Is mirrored" sid="9327841845374308" type="Chisky" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="3962233256610908" type="Audio">
+                    <param id="0" name="Audio file">Laser</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-12</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3146451229733996" type="Chisky">
+                    <param id="0" name="Object">DisparoBandera</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4950921135047671">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8984725319891099" type="DisparoBandera">
+                    <param id="0" name="Object">ObstaculoMetal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1096310809521368" type="DisparoBandera" />
+            </actions>
+        </event-block>
+        <event-block sid="1434273136303983">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="316304000725455" type="DisparoBandera">
+                    <param id="0" name="Object">ObstaculoSelva</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1589050602266823" type="ObstaculoSelva" />
+                <action id="-9" name="Destroy" sid="5666456246294129" type="DisparoBandera" />
+            </actions>
+        </event-block>
+        <event-block sid="5565525446376418">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8877348474709744" type="DisparoBandera">
+                    <param id="0" name="Object">ObstaculoSelva2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8942039420062958" type="ObstaculoSelva2" />
+                <action id="-9" name="Destroy" sid="9365756880854267" type="DisparoBandera" />
+            </actions>
+        </event-block>
+        <event-block sid="5196325132087295">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1112972642986343" type="Chisky">
+                    <param id="0" name="Object">MonedaOro</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2949264765972222" type="Audio">
+                    <param id="0" name="Audio file">Sonido monedas</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7789855247985096" type="MonedaOro" />
+                <action id="-10" name="Add to" sid="7256569479017204" type="System">
+                    <param id="0" name="Variable">puntosAciertoSelva1_2</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="0" name="Set text" sid="3379567641657694" type="ContadorPuntos">
+                    <param id="0" name="Text">puntosAciertoSelva1_2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1877557153324146" type="Chisky">
+                    <param id="0" name="Object">5PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="4176679353165509" type="5PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="469474940878239" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5032662297510719" type="Chisky">
+                    <param id="0" name="Object">ParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="8681998474643215" type="ParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="516920303979139">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7439407291573321" type="Chisky">
+                    <param id="0" name="Object">Caballo1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6760439204291719" type="Audio">
+                    <param id="0" name="Audio file">CaballoSonido</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-12</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8906724112063957" type="Caballo1" />
+                <action id="-10" name="Add to" sid="6474304285661461" type="System">
+                    <param id="0" name="Variable">puntosAciertoSelva1_2</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="0" name="Set text" sid="4076552924445617" type="ContadorPuntos">
+                    <param id="0" name="Text">puntosAciertoSelva1_2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7298095920109197" type="Chisky">
+                    <param id="0" name="Object">4PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="6428269775127561" type="4PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="4674601675613571" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9885543643726074" type="Chisky">
+                    <param id="0" name="Object">ParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="822387794356223" type="ParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7230792336196808">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6983944986245708" type="Chisky">
+                    <param id="0" name="Object">Perla1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7674139075482309" type="Audio">
+                    <param id="0" name="Audio file">Perla</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-13</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4275925326320964" type="Perla1" />
+                <action id="-10" name="Add to" sid="7018157339286631" type="System">
+                    <param id="0" name="Variable">puntosAciertoSelva1_2</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="0" name="Set text" sid="6834181605333957" type="ContadorPuntos">
+                    <param id="0" name="Text">puntosAciertoSelva1_2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4280370892443389" type="Chisky">
+                    <param id="0" name="Object">3PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="4930734042753145" type="3PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="6178785577412327" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="5733953302933822" type="Chisky">
+                    <param id="0" name="Object">ParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="1540071677085089" type="ParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8634131989796358">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1365466252660533" type="Chisky">
+                    <param id="0" name="Object">Espejo1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6647062188759373" type="Audio">
+                    <param id="0" name="Audio file">Espejo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-7</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="52376358748719" type="Espejo1" />
+                <action id="-10" name="Add to" sid="115495878608271" type="System">
+                    <param id="0" name="Variable">puntosAciertoSelva1_2</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="8241330778697506" type="ContadorPuntos">
+                    <param id="0" name="Text">puntosAciertoSelva1_2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1426915580281744" type="Chisky">
+                    <param id="0" name="Object">2PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="7243576662476642" type="2PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="8794291908923163" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1102370092209137" type="Chisky">
+                    <param id="0" name="Object">ParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="3813860016795232" type="ParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7996448030130439">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7913249458049926" type="Chisky">
+                    <param id="0" name="Object">Madera1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="8800298575421157" type="Audio">
+                    <param id="0" name="Audio file">Sonido golpe sobre madera</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3178783437124058" type="Madera1" />
+                <action id="-10" name="Add to" sid="9427119919981973" type="System">
+                    <param id="0" name="Variable">puntosErroneosSelva1_2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6975943539680328" type="Chisky">
+                    <param id="0" name="Object">1PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="5568305096140414" type="1PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="7678036037714205" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="8824143971748087" type="Chisky">
+                    <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="7266581103337809" type="NoParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8827293616853027">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3996086961514427" type="Chisky">
+                    <param id="0" name="Object">Madera2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2015996210107995" type="Audio">
+                    <param id="0" name="Audio file">Sonido golpe sobre madera</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7075022965955738" type="Madera2" />
+                <action id="-10" name="Add to" sid="709341477409326" type="System">
+                    <param id="0" name="Variable">puntosErroneosSelva1_2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6632172186851674" type="Chisky">
+                    <param id="0" name="Object">1PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="9929528845491968" type="1PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="8781626883917191" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="177391263150894" type="Chisky">
+                    <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="2103019155543457" type="NoParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="668585951086288">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4355021398604381" type="Chisky">
+                    <param id="0" name="Object">Zapatos1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7526103696016002" type="Audio">
+                    <param id="0" name="Audio file">Bota</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2173662357655407" type="Zapatos1" />
+                <action id="-10" name="Add to" sid="8797263419051097" type="System">
+                    <param id="0" name="Variable">puntosErroneosSelva1_2</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2082139360098231" type="Chisky">
+                    <param id="0" name="Object">2PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="2541444447935358" type="2PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="8130753681673168" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4170520476415928" type="Chisky">
+                    <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="8060463424301242" type="NoParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8451079484361107">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4484882966627649" type="Chisky">
+                    <param id="0" name="Object">Zapatos2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5489844332052307" type="Audio">
+                    <param id="0" name="Audio file">Bota</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2293491837469297" type="Zapatos2" />
+                <action id="-10" name="Add to" sid="1887458138611954" type="System">
+                    <param id="0" name="Variable">puntosErroneosSelva1_2</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6370072809934939" type="Chisky">
+                    <param id="0" name="Object">2PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="1659264172093366" type="2PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="9608152284903891" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="6522186473077305" type="Chisky">
+                    <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="6844228780686976" type="NoParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5423185100427211">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2581972007440954" type="Chisky">
+                    <param id="0" name="Object">Chonete1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2706199145055129" type="Audio">
+                    <param id="0" name="Audio file">Aija</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-8</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8824235152313252" type="Chonete1" />
+                <action id="-10" name="Add to" sid="1275827893507915" type="System">
+                    <param id="0" name="Variable">puntosErroneosSelva1_2</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7896356879365931" type="Chisky">
+                    <param id="0" name="Object">3PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="1024902188817075" type="3PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="7219094200556942" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="4684369887282648" type="Chisky">
+                    <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="9804541496657689" type="NoParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7516777495970549">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7121656298724678" type="Chisky">
+                    <param id="0" name="Object">Diamante1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5523821838982705" type="Audio">
+                    <param id="0" name="Audio file">DiamanteSound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-8</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3413749064709593" type="Diamante1" />
+                <action id="-10" name="Add to" sid="1648457799581285" type="System">
+                    <param id="0" name="Variable">puntosErroneosSelva1_2</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2428135944640969" type="Chisky">
+                    <param id="0" name="Object">4PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="7496313473277476" type="4PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="5112974322975105" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="3118092833914762" type="Chisky">
+                    <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="9494748977631267" type="NoParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5939572450182745">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3421276668159921" type="Chisky">
+                    <param id="0" name="Object">Diamante2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6632116929726073" type="Audio">
+                    <param id="0" name="Audio file">DiamanteSound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-8</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1023893340398952" type="Diamante2" />
+                <action id="-10" name="Add to" sid="5891263998535629" type="System">
+                    <param id="0" name="Variable">puntosErroneosSelva1_2</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1662228859871168" type="Chisky">
+                    <param id="0" name="Object">4PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="5778309051014976" type="4PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="5076214676806879" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1737242780929955" type="Chisky">
+                    <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="1896218533770293" type="NoParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6692978772859359">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5217893807149313" type="Chisky">
+                    <param id="0" name="Object">PreguntasNivel1_1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1882665940767941" type="Audio">
+                    <param id="0" name="Audio file">Pregunta</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-2</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2662808064887094" type="PreguntasNivel1_1" />
+            </actions>
+        </event-block>
+        <event-block sid="8579615311158458">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="7045677367747905" type="System">
+                    <param id="0" name="Interval (seconds)">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="7868761235002501" type="System">
+                    <param id="0" name="Object to create">Tucan</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">random(50,300)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="101873028683279">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8577789411380351" type="Chisky">
+                    <param id="0" name="Object">PiedrasPlaya</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4989119187575955" type="Audio">
+                    <param id="0" name="Audio file">Sonido golpe sobre piedra</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-12</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6194142362246199">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6924531758795902" type="System">
+                    <param id="0" name="Interval (seconds)">50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="4167800631939239" type="System">
+                    <param id="0" name="Object to create">Rana</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">570</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2216172031400665">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4152610426846534" type="System">
+                    <param id="0" name="Interval (seconds)">90</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="2375814534431652" type="System">
+                    <param id="0" name="Object to create">Serpiente</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">570</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4091338778720188">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4272215941774834" type="System">
+                    <param id="0" name="Interval (seconds)">35</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="8679997676339497" type="System">
+                    <param id="0" name="Object to create">Mono</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">570</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8651768744974857">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6834566853866328" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7348746752894887" type="System">
+                    <param id="0" name="Variable">SilencioNivel1_2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="1028960302588979" type="System">
+                    <param id="0" name="Variable">puntosErroneosSelva1_2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="6687882220712934" type="System">
+                    <param id="0" name="Variable">puntosAciertoSelva1_2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-3" name="Create object" sid="1480694933972031" type="System">
+                    <param id="0" name="Object to create">TransicionNiveles</param>
+                    <param id="1" name="Layer">4</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="0" name="Play" sid="8066436574832966" type="Audio">
+                    <param id="0" name="Audio file">JunglaSoundFinal</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-8</param>
+                    <param id="1" name="Tag (optional)">&quot;SonidoFondoNivel1_2&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2568185129696525" type="ObstaculoInvisibleSelva2">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2936124164361993">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="6850284263646365" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="1951950076218623" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="8314832753596969">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3312683069011345" type="Chisky">
+                    <param id="0" name="Object">ObstaculoInvisibleSelva2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="3220672543657263" type="ObstaculoMovedisaSelva">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="1766519632006169" type="ObstaculoMovedisaSelva">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1312951926550703">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4822116911561738" type="Chisky">
+                    <param id="0" name="Object">MovedisaSelva</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="8915254221317818" type="System">
+                    <param id="0" name="Object to create">TransicionNiveles</param>
+                    <param id="1" name="Layer">4</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="6691463598599071" type="Chisky">
+                    <param id="0" name="X">3820</param>
+                    <param id="1" name="Y">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8856845718285546">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="204747215134582" type="Chisky" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4593778265462178" type="Audio">
+                    <param id="0" name="Audio file">SaltoGracioso</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-16</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9718080913616697">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="6733424447722429" type="Chisky" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1284113156790172" type="Audio">
+                    <param id="0" name="Audio file">Paso1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-3</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5352344694456952">
+            <conditions>
+                <condition id="-18" name="On created" sid="3459056392524891" type="Tucan" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6667564706069911" type="Audio">
+                    <param id="0" name="Audio file">Tucan</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-14</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2014548704498249">
+            <conditions>
+                <condition id="-18" name="On created" sid="2422471223426857" type="Mono" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="8066674744532349" type="Audio">
+                    <param id="0" name="Audio file">Chimpance</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-14</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2561984864982343">
+            <conditions>
+                <condition id="-18" name="On created" sid="4574936761997079" type="Rana" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1674071300339373" type="Audio">
+                    <param id="0" name="Audio file">Rana</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-14</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="176252778615841">
+            <conditions>
+                <condition id="-18" name="On created" sid="7195173162845353" type="Serpiente" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="8810726171577713" type="Audio">
+                    <param id="0" name="Audio file">Serpiente</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-14</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6646228199114758">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="1517823876968988" type="System">
+                    <param id="0" name="Interval (seconds)">42.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9272567720965944" type="Audio">
+                    <param id="0" name="Audio file">Manigordo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-14</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5639694652569175">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8463231726240602" type="Chisky">
+                    <param id="0" name="Object">ParedFinalSelva</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1399460236115495" type="Audio">
+                    <param id="0" name="Audio file">Sonido Teletransporte</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">2</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="1" name="Set session value" sid="3592981170173534" type="WebStorage">
+                    <param id="0" name="Key">&quot;PuntosAciertoNivel1&quot;</param>
+                    <param id="1" name="Value">puntosAciertoSelva1_2</param>
+                </action>
+                <action id="1" name="Set session value" sid="9629654084460629" type="WebStorage">
+                    <param id="0" name="Key">&quot;PuntosDesaciertoNivel1&quot;</param>
+                    <param id="1" name="Value">puntosErroneosSelva1_2</param>
+                </action>
+                <action id="1" name="Set session value" sid="567359532181898" type="WebStorage">
+                    <param id="0" name="Key">&quot;NombreNivelActual&quot;</param>
+                    <param id="1" name="Value">&quot;Nivel1_2&quot;</param>
+                </action>
+                <action id="1" name="Set session value" sid="1467133609727844" type="WebStorage">
+                    <param id="0" name="Key">&quot;accesoNiveles&quot;</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1891297762850516" type="System">
+                    <param id="0" name="Layout">ResultadosFinalNiveles</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="9789850508225478" title="AnimacionesObjetosAnimales">
+            <sub-events>
+                <event-block sid="314623046625828">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="3715320916929028" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6750391435605898" type="MonedaOro">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9155693550465563">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9188563249642118" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9326267205751679" type="Zapatos1">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8188304308546842">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="6468462679620201" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8088917809673988" type="Zapatos2">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="425586842052985">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="3991738782241254" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1406919743046853" type="Madera1">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5468296945780568">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="7940613499733141" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3776538905178033" type="Madera2">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3726785050808401">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="529391984859293" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="930236010583393" type="Espejo1">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="606684514146982">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="4371383034105044" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4308016841799602" type="Perla1">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4978280022522667">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="2065607757268015" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4362756540079718" type="Caballo1">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8505444634238782">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="1239234505316861" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3313010210070757" type="Diamante1">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5790515821299018">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="8792438109030953" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4769061706702461" type="Diamante2">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4939502363081729">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="5219175932601796" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9695363875411936" type="Tucan">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9253084694175489">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="8343559475415349" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5290517562129984" type="DisparoBananoNivel1_2">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7914694709776956">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="4009079623743251" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7577737216597483" type="PreguntasNivel1_1">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="499329197418833">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="8598297720959633" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9723017358111817" type="Serpiente">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3310959678130905">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9679449029887934" type="System">
+                            <param id="0" name="Interval (seconds)">0.25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5074379883673904" type="Rana">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="499167024989879">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8918443240413318" type="Chisky">
+                    <param id="0" name="Object">DisparoBananoNivel1_2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="430342843307874" type="Audio">
+                    <param id="0" name="Audio file">Sonido golpe banano</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-11</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="3960263990871617" type="DisparoBananoNivel1_2" />
+                <action id="-10" name="Add to" sid="2995060862909847" type="System">
+                    <param id="0" name="Variable">puntosErroneosSelva1_2</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="7105413518143852" type="Chisky">
+                    <param id="0" name="Object">3PuntosMsjNivel1_2</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="5103923172262051" type="3PuntosMsjNivel1_2">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-16" name="Wait" sid="4511496979856267" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9982495344050099" type="Chisky">
+                    <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                    <param id="1" name="Layer">3</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="1865072772477076" type="NoParticipaIntercambioNivel1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4077424327272764">
+            <conditions>
+                <condition behavior="Turret" id="1" name="On shoot" sid="7764872753176604" type="TorretaNivel1_2" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4776481974245701" type="Audio">
+                    <param id="0" name="Audio file">Laser</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-12</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="9325851986471374" type="TorretaNivel1_2">
+                    <param id="0" name="Object">DisparoBananoNivel1_2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4590408714582687">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6971837393790688" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="395430666580528" type="TorretaNivel1_2">
+                    <param id="0" name="Target">Chisky</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="7518685477805682">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1385549477506724" type="DisparoBananoNivel1_2">
+                    <param id="0" name="Object">ObstaculoMetal</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="1864976815350487" type="DisparoBananoNivel1_2">
+                    <param id="0" name="Object">ObstaculoSelva</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="1569281463598684" type="DisparoBananoNivel1_2">
+                    <param id="0" name="Object">ObstaculoSelva2</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="8201065309590352" type="DisparoBananoNivel1_2">
+                    <param id="0" name="Object">Tucan</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="9407152385194465" type="DisparoBananoNivel1_2">
+                    <param id="0" name="Object">Serpiente</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="3878153907861985" type="DisparoBananoNivel1_2">
+                    <param id="0" name="Object">Rana</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="673068704272331" type="DisparoBananoNivel1_2">
+                    <param id="0" name="Object">Mono</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="8124183254130957" type="DisparoBananoNivel1_2">
+                    <param id="0" name="Object">Mono2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9683241573484527" type="DisparoBananoNivel1_2" />
+            </actions>
+        </event-block>
+        <event-block sid="5460025330516461">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5066884825025341" type="DisparoBandera">
+                    <param id="0" name="Object">DisparoBananoNivel1_2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1252921638440891" type="DisparoBananoNivel1_2" />
+                <action id="-9" name="Destroy" sid="7447092598423985" type="DisparoBandera" />
+            </actions>
+        </event-block>
+        <event-block sid="1018963731419443">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="337207678495364" type="Mono2">
+                    <param id="0" name="Object">CambioDireccionMonoNivel1_2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="308478025385137">
+                    <conditions>
+                        <condition id="7" name="Is mirrored" sid="9230212947555518" type="Mono2" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="7214601243193131" type="Mono2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1575521037134844">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2726834070218839" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="7658750933375815" type="Mono2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4759094012686303">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3063829775374454" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">IconoSonido</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1470793470338006">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8101894214120044" type="System">
+                            <param id="0" name="Variable">SilencioNivel1_2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="22" name="Set paused" sid="2303165883711523" type="Audio">
+                            <param id="0" name="Tag">&quot;SonidoFondoNivel1_2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7096510484577746" type="System">
+                            <param id="0" name="Variable">SilencioNivel1_2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="3594392186042531" type="IconoSonido">
+                            <param id="0" name="Animation">&quot;Sonido&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9364173934154038">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3916392771816315" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="22" name="Set paused" sid="9084018736994463" type="Audio">
+                            <param id="0" name="Tag">&quot;SonidoFondoNivel1_2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3389487373992971" type="System">
+                            <param id="0" name="Variable">SilencioNivel1_2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="1566121410788305" type="IconoSonido">
+                            <param id="0" name="Animation">&quot;Silencio&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1349220748402627">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6730461225131693" type="Iguana">
+                    <param id="0" name="Object">CambioDireccionMonoNivel1_2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3335283939280145">
+                    <conditions>
+                        <condition id="7" name="Is mirrored" sid="2679211027883696" type="Iguana" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="3586818170508509" type="Iguana">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="685318855250962">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="8480586795125537" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="4721208050301436" type="Iguana">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="64257089075696">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2376838412102889" type="Mono">
+                    <param id="0" name="Object">MovedisaSelva</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="3239289626862401" type="Mono">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="4" name="Set animation" sid="7875129080928296" type="Mono">
+                    <param id="0" name="Animation">&quot;Regreso&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="3447317940195254" type="Mono">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5971887710443369">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2551350395771466" type="Rana">
+                    <param id="0" name="Object">MovedisaSelva</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="5955576123303372" type="Rana">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="1719441516195309" type="Rana">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="944270471225751">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5770579698604985" type="Serpiente">
+                    <param id="0" name="Object">MovedisaSelva</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="531478274275381" type="Serpiente">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="1665250673423849" type="Serpiente">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
