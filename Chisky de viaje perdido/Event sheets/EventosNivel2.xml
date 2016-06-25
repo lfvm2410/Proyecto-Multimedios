@@ -3,66 +3,707 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventosNivel2</name>
     <events>
-        <event-block sid="6529248300744864">
-            <conditions>
-                <condition behavior="Platform" id="0" name="Is moving" sid="3362535678699587" type="ChiskyNivel2" />
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="6153838226211282" type="ChiskyNivel2">
-                    <param id="0" name="Animation">&quot;Corriendo&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2656101288622603">
-            <conditions>
-                <condition id="2" name="Key is down" sid="3152565260227693" type="Keyboard">
-                    <param id="0" name="Key">38 (Up arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="3544302506469971" type="ChiskyNivel2">
-                    <param id="0" name="Animation">&quot;Brincando&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2553013349848054">
-            <conditions>
-                <condition id="2" name="Key is down" sid="4634401470640997" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="1313585700676405" type="ChiskyNivel2">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6792100206522816">
-            <conditions>
-                <condition id="2" name="Key is down" sid="9538566207252935" type="Keyboard">
-                    <param id="0" name="Key">39 (Right arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="8435299629752547" type="ChiskyNivel2">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="4921373800502353">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="9927141783784218" type="ChiskyNivel2">
-                    <param id="0" name="Object">Espinas</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Set position" sid="5439610712781927" type="ChiskyNivel2">
-                    <param id="0" name="X">247</param>
-                    <param id="1" name="Y">0</param>
-                </action>
-            </actions>
-        </event-block>
+        <variable constant="0" name="puntosNivel2" sid="9606953681714005" static="0" type="number">0</variable>
+        <variable constant="0" name="permisoSaltoExageradoNivel2" sid="2005813524538243" static="0" type="number">1</variable>
+        <variable constant="0" name="tipoValorObtenidoNivel2" sid="3820285812155272" static="0" type="text"></variable>
+        <event-group description="" sid="5355145460829821" title="AccionesChiskyNivel2">
+            <sub-events>
+                <event-block sid="305923298950815">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="3070789230413645" type="ChiskyNivel2" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6025206455673365" type="ChiskyNivel2">
+                            <param id="0" name="Animation">&quot;Corriendo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8375500306664047">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="3012147828024412" type="ChiskyNivel2" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="4425940960099182" type="Audio">
+                            <param id="0" name="Audio file">SaltoGracioso</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-16</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9579016749857822">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="9024562339311549" type="ChiskyNivel2" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="1377051623788372" type="Audio">
+                            <param id="0" name="Audio file">Paso1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-3</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8133073877237023">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="6909592452243564" type="ChiskyNivel2" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="3898217541046667" type="System">
+                            <param id="0" name="Variable">permisoSaltoExageradoNivel2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4227079591722626">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="3884602745007337" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7984223037680018" type="ChiskyNivel2">
+                            <param id="0" name="Animation">&quot;Brincando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2472900506595073">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1611296343795555" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="3938248657716472" type="ChiskyNivel2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8324679050544308">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="2729972841907789" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="3032713312087417" type="ChiskyNivel2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1437176782219421">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="554562707207286" type="Keyboard">
+                            <param id="0" name="Key">32 (Barra Espaciadora)</param>
+                        </condition>
+                        <condition id="7" name="Is mirrored" sid="9612110815154294" type="ChiskyNivel2" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="3739106768495535" type="Audio">
+                            <param id="0" name="Audio file">Laser</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-12</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="8499514069182337" type="ChiskyNivel2">
+                            <param id="0" name="Object">DisparoBandera</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="917264206345456" type="DisparoBandera">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8034481765559055">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="3146149324857683" type="Keyboard">
+                            <param id="0" name="Key">32 (Barra Espaciadora)</param>
+                        </condition>
+                        <condition id="7" inverted="1" name="Is mirrored" sid="2118639643282151" type="ChiskyNivel2" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="4843149819697433" type="Audio">
+                            <param id="0" name="Audio file">Laser</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-12</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="1299485518858583" type="ChiskyNivel2">
+                            <param id="0" name="Object">DisparoBandera</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8370301675818144">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3410269578248933" type="ChiskyNivel2">
+                            <param id="0" name="Object">EspinasNivel2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="959567937228446" type="System">
+                            <param id="0" name="Object to create">TransicionNiveles</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="1781030493228272" type="System">
+                            <param id="0" name="Variable">puntosNivel2</param>
+                            <param id="1" name="Value">-2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9182973425146008" type="ContadorPuntos">
+                            <param id="0" name="Text">puntosNivel2</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="4846832352585534" type="ChiskyNivel2">
+                            <param id="0" name="X">247</param>
+                            <param id="1" name="Y">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4417459379402078" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="9778018695915453" type="System">
+                            <param id="0" name="Object to create">BrincarNivel2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">536.18 </param>
+                            <param id="3" name="Y">229.416</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="6992718303368305" type="ChiskyNivel2">
+                            <param id="0" name="Object">2PuntosMsjNivel1_2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="3264144639922575" type="2PuntosMsjNivel1_2">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5845452677434776" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="6172012007626913" type="ChiskyNivel2">
+                            <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="5691178189722357" type="NoParticipaIntercambioNivel1">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9919365332413848">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2412794245863324" type="ChiskyNivel2">
+                            <param id="0" name="Object">BloqueArenaNivel2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="4848140501339177" type="System">
+                            <param id="0" name="Seconds">3.0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2621683243503084" type="BloqueArenaNivel2" />
+                    </actions>
+                </event-block>
+                <event-block sid="4801801087556998">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6254815816163271" type="ChiskyNivel2">
+                            <param id="0" name="Object">SensorAguaNivel2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="8154511544457261" type="System">
+                            <param id="0" name="Object to create">TransicionNiveles</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="7582612975130176" type="System">
+                            <param id="0" name="Variable">puntosNivel2</param>
+                            <param id="1" name="Value">-2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1339428139412057" type="ContadorPuntos">
+                            <param id="0" name="Text">puntosNivel2</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="9102969120126718" type="ChiskyNivel2">
+                            <param id="0" name="X">1515</param>
+                            <param id="1" name="Y">437</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="9463295206834387" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="6823194612148591" type="System">
+                            <param id="0" name="Object to create">BloqueArenaNivel2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">2148</param>
+                            <param id="3" name="Y">397</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="4807671965232098" type="System">
+                            <param id="0" name="Object to create">BloqueArenaNivel2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">2447</param>
+                            <param id="3" name="Y">397</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="5270549245117734" type="System">
+                            <param id="0" name="Object to create">BloqueArenaNivel2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">2742</param>
+                            <param id="3" name="Y">397</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="7697900538173282" type="System">
+                            <param id="0" name="Object to create">BloqueArenaNivel2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">3019</param>
+                            <param id="3" name="Y">397</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="3277426384754052" type="System">
+                            <param id="0" name="Object to create">BloqueArenaNivel2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">3315</param>
+                            <param id="3" name="Y">397</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="8566715735555764" type="ChiskyNivel2">
+                            <param id="0" name="Object">2PuntosMsjNivel1_2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="3874985200052791" type="2PuntosMsjNivel1_2">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4060366610239844" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="948010449491033" type="ChiskyNivel2">
+                            <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="6520368279904219" type="NoParticipaIntercambioNivel1">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3155622796735461">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8794906037810287" type="ChiskyNivel2">
+                            <param id="0" name="Object">DisparoBananoNivel1_2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="6132134773286148" type="Audio">
+                            <param id="0" name="Audio file">Sonido golpe banano</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-11</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2857089905180402" type="DisparoBandera" />
+                        <action id="-3" name="Create object" sid="6115477917353759" type="System">
+                            <param id="0" name="Object to create">TransicionNiveles</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="1788205878909322" type="System">
+                            <param id="0" name="Variable">puntosNivel2</param>
+                            <param id="1" name="Value">-2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="2362814442080538" type="ContadorPuntos">
+                            <param id="0" name="Text">puntosNivel2</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="7753949899552751" type="ChiskyNivel2">
+                            <param id="0" name="X">3896</param>
+                            <param id="1" name="Y">474</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="9233884751994504" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="6177714843338483" type="System">
+                            <param id="0" name="Object to create">AcelerarNivel2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">4214</param>
+                            <param id="3" name="Y">459</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="6815480077008879" type="ChiskyNivel2">
+                            <param id="0" name="Object">2PuntosMsjNivel1_2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="2171180104888485" type="2PuntosMsjNivel1_2">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3382416982676503" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="5533415166808412" type="ChiskyNivel2">
+                            <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="3639658664506107" type="NoParticipaIntercambioNivel1">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6581498503647272">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="871517842478516" type="ChiskyNivel2">
+                            <param id="0" name="Object">BrincarNivel2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3386804173999634" type="BrincarNivel2" />
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="726391323868344" type="ChiskyNivel2">
+                            <param id="0" name="Jump strength">1300</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8237563363760319">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4614936284358656" type="ChiskyNivel2">
+                            <param id="0" name="Object">AcelerarNivel2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6067787648399914" type="AcelerarNivel2" />
+                        <action behavior="Platform" id="1" name="Set max speed" sid="2653061500642651" type="ChiskyNivel2">
+                            <param id="0" name="Max Speed">600</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="795287513456287" type="System">
+                            <param id="0" name="Seconds">5.0</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="4716371970778208" type="ChiskyNivel2">
+                            <param id="0" name="Max Speed">330</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6412048920845472">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8390687379928406" type="ChiskyNivel2">
+                            <param id="0" name="Object">ObstaculosNivel2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8911111663539457" type="ObstaculosNivel2" />
+                        <action behavior="Solid" id="0" name="Set enabled" sid="5253847933889304" type="BloqueArenaNivel2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7906387587980904" type="System">
+                            <param id="0" name="Seconds">5.0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="5714262540593687" type="BloqueArenaNivel2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="921105537254262">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7382747414476912" type="ChiskyNivel2">
+                            <param id="0" name="Object">SensorSoltarPiedraNivel2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1800686743912438" type="PiedraNivel2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="5090594578003317" type="PiedraNivel2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="8588361584242222" type="PiedraNivel2">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="646613665096098">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7169604754805164" type="ChiskyNivel2">
+                            <param id="0" name="Object">PiedraNivel2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="7255388088710797" type="System">
+                            <param id="0" name="Object to create">TransicionNiveles</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="8865503171110873" type="System">
+                            <param id="0" name="Object to create">PiedraNivel2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">6591</param>
+                            <param id="3" name="Y">-128</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8391337013392183" type="PiedraNivel2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="9506074684370364" type="System">
+                            <param id="0" name="Variable">puntosNivel2</param>
+                            <param id="1" name="Value">-2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="2803518358820545" type="ContadorPuntos">
+                            <param id="0" name="Text">puntosNivel2</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="6938352099586966" type="ChiskyNivel2">
+                            <param id="0" name="X">6119</param>
+                            <param id="1" name="Y">470</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="2741489244417315" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="884547470256725" type="ChiskyNivel2">
+                            <param id="0" name="Object">2PuntosMsjNivel1_2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="3169654407856513" type="2PuntosMsjNivel1_2">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7075955609635404" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="1970378014515157" type="ChiskyNivel2">
+                            <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="9762154236940975" type="NoParticipaIntercambioNivel1">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6846203888345492">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2440149400968401" type="ChiskyNivel2">
+                            <param id="0" name="Object">InterrogacionNivel2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2182021932899456" type="InterrogacionNivel2" />
+                        <action id="1" name="Set session value" sid="3829341785040024" type="WebStorage">
+                            <param id="0" name="Key">&quot;TipoPreguntaNivel2&quot;</param>
+                            <param id="1" name="Value">&quot;Simbolo&quot;</param>
+                        </action>
+                        <action id="1" name="Set session value" sid="3917885574213011" type="WebStorage">
+                            <param id="0" name="Key">&quot;PuntosActualesNivel2&quot;</param>
+                            <param id="1" name="Value">puntosNivel2</param>
+                        </action>
+                        <action id="-36" name="Save" sid="2220653110818549" type="System">
+                            <param id="0" name="Slot">&quot;CheckpointNivel3&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="4326345524885241" type="System">
+                            <param id="0" name="Layout">PreguntasNivel2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5448316741411132">
+                    <conditions>
+                        <condition id="-29" name="On load complete" sid="3774344773795497" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="4802848581388179">
+                            <conditions>
+                                <condition id="4" name="Session key exists" sid="4128204607013604" type="WebStorage">
+                                    <param id="0" name="Key">&quot;PuntosActualizadosNivel2&quot;</param>
+                                </condition>
+                                <condition id="4" name="Session key exists" sid="7318556906582915" type="WebStorage">
+                                    <param id="0" name="Key">&quot;TipoValorObtenido&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="3631491815276775" type="System">
+                                    <param id="0" name="Variable">puntosNivel2</param>
+                                    <param id="1" name="Value">WebStorage.SessionValue(&quot;PuntosActualizadosNivel2&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="4210101704184469" type="System">
+                                    <param id="0" name="Variable">tipoValorObtenidoNivel2</param>
+                                    <param id="1" name="Value">WebStorage.SessionValue(&quot;TipoValorObtenido&quot;)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="2542159218794191">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="7198053477626676" type="System">
+                                            <param id="0" name="Variable">tipoValorObtenidoNivel2</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Positivo&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="7667223140394863" type="ContadorPuntos">
+                                            <param id="0" name="Text">puntosNivel2</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="7280573621844236" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="9485079176259525" type="ChiskyNivel2">
+                                            <param id="0" name="Object">5PuntosMsjNivel1_2</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="3442255786037715" type="5PuntosMsjNivel1_2">
+                                            <param id="0" name="Angle">270</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="4992565178565995" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="4317582505717682" type="ChiskyNivel2">
+                                            <param id="0" name="Object">ParticipaIntercambioNivel1</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="9812753538313558" type="ParticipaIntercambioNivel1">
+                                            <param id="0" name="Angle">270</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="4764664796143942">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="1028760745632119" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="79121959279474" type="ContadorPuntos">
+                                            <param id="0" name="Text">puntosNivel2</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="4949826712114992" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="7073083933504732" type="ChiskyNivel2">
+                                            <param id="0" name="Object">5PuntosMsjNivel1_2</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="5355012863076771" type="5PuntosMsjNivel1_2">
+                                            <param id="0" name="Angle">270</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="3345379942088042" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="5845158337571736" type="ChiskyNivel2">
+                                            <param id="0" name="Object">NoParticipaIntercambioNivel1</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="9053694005922305" type="NoParticipaIntercambioNivel1">
+                                            <param id="0" name="Angle">270</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2425824990227144" title="AccionesObjetosNivel2">
+            <sub-events>
+                <event-block sid="4218821420166081">
+                    <conditions>
+                        <condition behavior="Turret" id="1" name="On shoot" sid="4274292655699174" type="TorretaNivel2" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="7559427602025194" type="Audio">
+                            <param id="0" name="Audio file">Laser</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-12</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="7136041161591007" type="TorretaNivel2">
+                            <param id="0" name="Object">DisparoBananoNivel1_2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5537813180424662">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="7642685205504963" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Turret" id="1" name="Add object to target" sid="9072557541539442" type="TorretaNivel2">
+                            <param id="0" name="Target">ChiskyNivel2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6248903985907939">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6905074335450086" type="DisparoBandera">
+                            <param id="0" name="Object">DisparoBananoNivel1_2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="7693713560264409" type="DisparoBananoNivel1_2" />
+                        <action id="-9" name="Destroy" sid="1284754354016601" type="DisparoBandera" />
+                    </actions>
+                </event-block>
+                <event-block sid="8937004476844363">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2073455460224636" type="System">
+                            <param id="0" name="Variable">permisoSaltoExageradoNivel2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="1644879473656737" type="ChiskyNivel2">
+                            <param id="0" name="Jump strength">650</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3798486291165667" type="System">
+                            <param id="0" name="Variable">permisoSaltoExageradoNivel2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9796116860802976">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="4062889836385345" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3034761107501999" type="System">
+                            <param id="0" name="Variable">puntosNivel2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4699464413744027" type="System">
+                            <param id="0" name="Variable">permisoSaltoExageradoNivel2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5847751517023443" type="System">
+                            <param id="0" name="Variable">tipoValorObtenidoNivel2</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6472010860628816">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="5836399663750453" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6725514623043236" type="DisparoBananoNivel1_2">
+                            <param id="0" name="Animation">&quot;Movimiento&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1376529544824068">
+                    <conditions>
+                        <condition id="-31" inverted="1" name="Object UID exists" sid="160763744591319" type="System">
+                            <param id="0" name="UID">988</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="7850333495603513" type="System">
+                            <param id="0" name="Object to create">PiedraNivel2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">6591</param>
+                            <param id="3" name="Y">-128</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="5749648057721466" type="PiedraNivel2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

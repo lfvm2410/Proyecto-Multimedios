@@ -57,7 +57,7 @@
         <event-block sid="390825784555748">
             <conditions>
                 <condition id="3" name="On key released" sid="2665150767146867" type="Keyboard">
-                    <param id="0" name="Key">32 (Space)</param>
+                    <param id="0" name="Key">32 (Barra Espaciadora)</param>
                 </condition>
                 <condition id="7" name="Is mirrored" sid="9923220972140279" type="Chisky" />
             </conditions>
@@ -81,7 +81,7 @@
         <event-block sid="8648282812515458">
             <conditions>
                 <condition id="3" name="On key released" sid="5325293008282971" type="Keyboard">
-                    <param id="0" name="Key">32 (Space)</param>
+                    <param id="0" name="Key">32 (Barra Espaciadora)</param>
                 </condition>
                 <condition id="7" inverted="1" name="Is mirrored" sid="9327841845374308" type="Chisky" />
             </conditions>

@@ -4139,11 +4139,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="BosqeuNivel" sid="4390311002601087">
+        <object-type name="BosqueNivel2" sid="4390311002601087">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="111450587363682" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Bosque  Nivel 2\Bosqeu nivel 2.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Praderas\BosqueFondoN2.png">
                         <collision-poly>
                             <point x="0" y="0" />
                             <point x="0.99875" y="0.00166667" />
@@ -4154,15 +4154,15 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="BosqeuNivel2" sid="9701961062138816">
+        <object-type name="BosqueNivel2Invertido" sid="9701961062138816">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9521171898582281" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Bosque  Nivel 2\Bosqeu nivel 2.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Praderas\BosqueFondoN2.png">
                         <collision-poly>
                             <point x="1" y="1" />
-                            <point x="0.00125003" y="0.998333" />
-                            <point x="0.00125003" y="0.00166667" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
                             <point x="1" y="0" />
                         </collision-poly>
                     </frame>
@@ -4309,7 +4309,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Suelo" sid="4287543799641873">
+        <object-type name="SueloNivel2" sid="4287543799641873">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="3052363338294793">
@@ -4322,7 +4322,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Pared" sid="6667674678057731">
+        <object-type name="ParedNivel2" sid="6667674678057731">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="8441553745405408">
@@ -4348,39 +4348,910 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Espinas" sid="1883826401819196">
+        <object-type name="EspinasNivel2" sid="1883826401819196">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="8378758194814903">
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
+            <effects>
+                <effect-type name="WarpRipple">
+                    <effect id="warpripple" />
+                </effect-type>
+            </effects>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5696833378609882" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\FondoEspinas.png">
                         <collision-poly>
-                            <point x="0" y="0.036" />
-                            <point x="1" y="0.032" />
-                            <point x="1" y="1" />
+                            <point x="0.13" y="0.295455" />
+                            <point x="0.5" y="0.431818" />
+                            <point x="0.82" y="0.409091" />
+                            <point x="0.9775" y="0.5" />
+                            <point x="0.99" y="0.977273" />
                             <point x="0" y="1" />
+                            <point x="0.015" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="interrogación" sid="117762276706693">
+        <object-type name="InterrogacionNivel2" sid="117762276706693">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="WarpRipple">
+                    <effect id="warpripple" />
+                </effect-type>
+            </effects>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="8229984686970966" speed="5">
+                    <frame duration="1" hotspotX="0.491525" hotspotY="0.492958" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\interrogación.png">
+                        <collision-poly>
+                            <point x="0.661017" y="0.71831" />
+                            <point x="0.508475" y="0.830986" />
+                            <point x="0.322034" y="0.732394" />
+                            <point x="0.186441" y="0.15493" />
+                            <point x="0.508475" y="0.112676" />
+                            <point x="0.694915" y="0.253521" />
+                            <point x="0.762712" y="0.507042" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="6774850826680021">
             <plugin id="Sprite" />
             <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8229984686970966" speed="5">
-                    <frame duration="1" hotspotX="0.508475" hotspotY="0.507042" original-source="C:\Users\Ariel\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\interrogación.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7008147039996501" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BloqueArenaNivel2" sid="516174016075468">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8045505436793564">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9223901981764184" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Bloques\bloqueTierra.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SensorAguaNivel2" sid="3718077205831152">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1720468244073909" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TorretaNivel2" sid="4166696074748966">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5405964192381193">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="1792542475912579">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8031695415188767" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Torretas\TorretaInca.png">
+                        <image-point name="Imagepoint 1" x="0.092" y="0.609333" />
                         <collision-poly>
-                            <point x="0.338983" y="0.28169" />
-                            <point x="0.491525" y="0.169014" />
-                            <point x="0.677966" y="0.267606" />
-                            <point x="0.813559" y="0.84507" />
-                            <point x="0.491525" y="0.887324" />
-                            <point x="0.305085" y="0.746479" />
-                            <point x="0.237288" y="0.492958" />
+                            <point x="0.149333" y="0.149333" />
+                            <point x="0.5" y="0.004" />
+                            <point x="0.856" y="0.144" />
+                            <point x="1" y="0.5" />
+                            <point x="0.861333" y="0.861333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.145333" y="0.854667" />
+                            <point x="0.00133333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AcelerarNivel2" sid="9264026668485514">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="WarpRipple">
+                    <effect id="warpripple" />
+                </effect-type>
+            </effects>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="9900055999108351" speed="5">
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\letras A B O\A.png">
+                        <collision-poly>
+                            <point x="0.21519" y="0.2125" />
+                            <point x="0.493671" y="0.1" />
+                            <point x="0.734177" y="0.2625" />
+                            <point x="0.835443" y="0.5" />
+                            <point x="0.772152" y="0.775" />
+                            <point x="0.493671" y="0.825" />
+                            <point x="0.227848" y="0.775" />
+                            <point x="0.113924" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BrincarNivel2" sid="730978176536691">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="WarpRipple">
+                    <effect id="warpripple" />
+                </effect-type>
+            </effects>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="3763693519872575" speed="5">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.505882" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\letras A B O\B.png">
+                        <collision-poly>
+                            <point x="0.197183" y="0.164706" />
+                            <point x="0.492958" y="0.0941176" />
+                            <point x="0.71831" y="0.235294" />
+                            <point x="0.760563" y="0.494118" />
+                            <point x="0.760563" y="0.8" />
+                            <point x="0.492958" y="0.847059" />
+                            <point x="0.28169" y="0.764706" />
+                            <point x="0.112676" y="0.494118" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ObstaculosNivel2" sid="7267466417088465">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="WarpRipple">
+                    <effect id="warpripple" />
+                </effect-type>
+            </effects>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="6435095637243985" speed="5">
+                    <frame duration="1" hotspotX="0.506173" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\letras A B O\O.png">
+                        <collision-poly>
+                            <point x="0.197531" y="0.181818" />
+                            <point x="0.493827" y="0.102273" />
+                            <point x="0.716049" y="0.261364" />
+                            <point x="0.839506" y="0.5" />
+                            <point x="0.753086" y="0.772727" />
+                            <point x="0.493827" y="0.852273" />
+                            <point x="0.271605" y="0.75" />
+                            <point x="0.111111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SensorSoltarPiedraNivel2" sid="4315454428862866">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="3107445098756179" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PiedraNivel2" sid="8045803123031465">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2072168707531705">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="1412561999449863">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="1833067721583634" speed="5">
+                    <frame duration="1" hotspotX="0.501114" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Roca Obstaculo\Lajota.png">
+                        <collision-poly>
+                            <point x="0.169265" y="0.230303" />
+                            <point x="0.498886" y="0" />
+                            <point x="0.919822" y="0.109091" />
+                            <point x="0.982183" y="0.5" />
+                            <point x="0.888641" y="0.848485" />
+                            <point x="0.498886" y="0.987879" />
+                            <point x="0.0890869" y="0.878788" />
+                            <point x="0.0334076" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ParedFinalNivel2" sid="8444607602023994">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="218898257002106">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="3871157917662665" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FondoPreNi2" sid="32862330958986">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="4764814988647124" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Praderas\Pradera.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="RespuestaCorrecta" pingpong="0" repeatcount="1" repeatto="0" sid="3298861051791953" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 1\RespuestaCorrectaMsj.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="RespuestaIncorrecta" pingpong="0" repeatcount="1" repeatto="0" sid="6860374398415157" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\Preguntas de Niveles\Nivel 1\RespuestaIncorrectaMsj.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PreguntasPreNi2" sid="3816638485210132">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Pregunta1" pingpong="0" repeatcount="1" repeatto="0" sid="2792117467443524" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta1Nivel2\Pregunta1Nivel2.png">
+                        <collision-poly>
+                            <point x="0.315" y="0.42" />
+                            <point x="0.5" y="0.426667" />
+                            <point x="0.6825" y="0.423333" />
+                            <point x="0.6725" y="0.563333" />
+                            <point x="0.3325" y="0.556667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta2" pingpong="0" repeatcount="1" repeatto="0" sid="8374297342999458" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta2Nivel2\Pregunta2Nivel2.png">
+                        <collision-poly>
+                            <point x="0.27375" y="0.365" />
+                            <point x="0.725" y="0.366667" />
+                            <point x="0.6175" y="0.49" />
+                            <point x="0.37875" y="0.495" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta3" pingpong="0" repeatcount="1" repeatto="0" sid="9527785570801556" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta3Nivel2\Pregunta3Nivel2.png">
+                        <collision-poly>
+                            <point x="0.275" y="0.366667" />
+                            <point x="0.7175" y="0.376667" />
+                            <point x="0.8925" y="0.5" />
+                            <point x="0.64875" y="0.531667" />
+                            <point x="0.5" y="0.535" />
+                            <point x="0.1" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta4" pingpong="0" repeatcount="1" repeatto="0" sid="3761680901843174" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta4Nivel2\Pregunta4Nivel2.png">
+                        <collision-poly>
+                            <point x="0.2775" y="0.37" />
+                            <point x="0.7225" y="0.37" />
+                            <point x="0.85125" y="0.5" />
+                            <point x="0.635" y="0.513333" />
+                            <point x="0.36375" y="0.515" />
+                            <point x="0.14" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta5" pingpong="0" repeatcount="1" repeatto="0" sid="7460591137392349" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta5Nivel2\Pregunta5Nivel2.png">
+                        <collision-poly>
+                            <point x="0.28375" y="0.378333" />
+                            <point x="0.7225" y="0.37" />
+                            <point x="0.91625" y="0.5" />
+                            <point x="0.6525" y="0.536667" />
+                            <point x="0.3475" y="0.536667" />
+                            <point x="0.09625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OpcionAPreNi2" sid="3907194442730898">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Pregunta1A" pingpong="0" repeatcount="1" repeatto="0" sid="8330256788735115" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta1Nivel2\OpcionA.png">
+                        <collision-poly>
+                            <point x="0.0316206" y="0.235294" />
+                            <point x="0.499341" y="0.382353" />
+                            <point x="0.959157" y="0.303922" />
+                            <point x="0.97892" y="0.5" />
+                            <point x="0.97365" y="0.803922" />
+                            <point x="0.499341" y="0.470588" />
+                            <point x="0.0316206" y="0.764706" />
+                            <point x="0.0105402" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta1AMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="6337041590703338" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0316206" y="0.235294" />
+                            <point x="0.499341" y="0.382353" />
+                            <point x="0.959157" y="0.303922" />
+                            <point x="0.97892" y="0.5" />
+                            <point x="0.97365" y="0.803922" />
+                            <point x="0.499341" y="0.470588" />
+                            <point x="0.0316206" y="0.764706" />
+                            <point x="0.0105402" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta2A" pingpong="0" repeatcount="1" repeatto="0" sid="9204927024570034" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta2Nivel2\OpcionA.png">
+                        <collision-poly>
+                            <point x="0.0958904" y="0.162791" />
+                            <point x="0.5" y="0.162791" />
+                            <point x="0.856164" y="0.244186" />
+                            <point x="0.910959" y="0.5" />
+                            <point x="0.869863" y="0.77907" />
+                            <point x="0.5" y="0.848837" />
+                            <point x="0.143836" y="0.755814" />
+                            <point x="0.0958904" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta2AMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="1925102484987965" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0958904" y="0.162791" />
+                            <point x="0.5" y="0.162791" />
+                            <point x="0.856164" y="0.244186" />
+                            <point x="0.910959" y="0.5" />
+                            <point x="0.869863" y="0.77907" />
+                            <point x="0.5" y="0.848837" />
+                            <point x="0.143836" y="0.755814" />
+                            <point x="0.0958904" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta3A" pingpong="0" repeatcount="1" repeatto="0" sid="4372032148862643" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Luis Fernando\Desktop\Pregunta3Nivel2\OpcionA.png">
+                        <collision-poly>
+                            <point x="0.0380228" y="0.206186" />
+                            <point x="0.5" y="0.515464" />
+                            <point x="0.948669" y="0.278351" />
+                            <point x="0.973384" y="0.494845" />
+                            <point x="0.961977" y="0.793814" />
+                            <point x="0.5" y="0.680412" />
+                            <point x="0.0418251" y="0.773196" />
+                            <point x="0.0152091" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta3AMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="9476708474180987" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638">
+                        <collision-poly>
+                            <point x="0.0380228" y="0.206186" />
+                            <point x="0.5" y="0.515464" />
+                            <point x="0.948669" y="0.278351" />
+                            <point x="0.973384" y="0.494845" />
+                            <point x="0.961977" y="0.793814" />
+                            <point x="0.5" y="0.680412" />
+                            <point x="0.0418251" y="0.773196" />
+                            <point x="0.0152091" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta4A" pingpong="0" repeatcount="1" repeatto="0" sid="4414403228225354" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta4Nivel2\OpcionA.png">
+                        <collision-poly>
+                            <point x="0.0337942" y="0.22449" />
+                            <point x="0.950845" y="0.326531" />
+                            <point x="0.973886" y="0.826531" />
+                            <point x="0.0291859" y="0.806122" />
+                            <point x="0.0138249" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta4AMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="7947173274044512" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0337942" y="0.22449" />
+                            <point x="0.950845" y="0.326531" />
+                            <point x="0.973886" y="0.826531" />
+                            <point x="0.0291859" y="0.806122" />
+                            <point x="0.0138249" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta5A" pingpong="0" repeatcount="1" repeatto="0" sid="8713596367294877" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta5Nivel2\OpcionA.png">
+                        <collision-poly>
+                            <point x="0.0392157" y="0.177778" />
+                            <point x="0.5" y="0.122222" />
+                            <point x="0.941176" y="0.266667" />
+                            <point x="0.968137" y="0.5" />
+                            <point x="0.95098" y="0.777778" />
+                            <point x="0.5" y="0.844444" />
+                            <point x="0.0539216" y="0.755556" />
+                            <point x="0.0196078" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta5AMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="4122701059412441" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0392157" y="0.177778" />
+                            <point x="0.5" y="0.122222" />
+                            <point x="0.941176" y="0.266667" />
+                            <point x="0.968137" y="0.5" />
+                            <point x="0.95098" y="0.777778" />
+                            <point x="0.5" y="0.844444" />
+                            <point x="0.0539216" y="0.755556" />
+                            <point x="0.0196078" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OpcionCPreNi2" sid="4347258613929699">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Pregunta1C" pingpong="0" repeatcount="1" repeatto="0" sid="286246747912018" speed="5">
+                    <frame duration="1" hotspotX="0.501424" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta1Nivel2\OpcionC.png">
+                        <collision-poly>
+                            <point x="0.0235018" y="0.217391" />
+                            <point x="0.499412" y="0.184783" />
+                            <point x="0.971798" y="0.26087" />
+                            <point x="0.984724" y="0.5" />
+                            <point x="0.974148" y="0.76087" />
+                            <point x="0.499412" y="0.793478" />
+                            <point x="0.0246769" y="0.771739" />
+                            <point x="0.0105758" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta1CMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="1964795617038489" speed="5">
+                    <frame duration="1" hotspotX="0.501992" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0235018" y="0.217391" />
+                            <point x="0.499412" y="0.184783" />
+                            <point x="0.971798" y="0.26087" />
+                            <point x="0.984724" y="0.5" />
+                            <point x="0.974148" y="0.76087" />
+                            <point x="0.499412" y="0.793478" />
+                            <point x="0.0246769" y="0.771739" />
+                            <point x="0.0105758" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta2C" pingpong="0" repeatcount="1" repeatto="0" sid="6867800399123152" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta2Nivel2\OpcionC.png">
+                        <collision-poly>
+                            <point x="0.0961538" y="0.172414" />
+                            <point x="0.5" y="0.137931" />
+                            <point x="0.858974" y="0.252874" />
+                            <point x="0.916667" y="0.494253" />
+                            <point x="0.878205" y="0.781609" />
+                            <point x="0.5" y="0.816092" />
+                            <point x="0.134615" y="0.758621" />
+                            <point x="0.0897436" y="0.494253" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta2CMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="9486557427571719" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772">
+                        <collision-poly>
+                            <point x="0.0961538" y="0.172414" />
+                            <point x="0.5" y="0.137931" />
+                            <point x="0.858974" y="0.252874" />
+                            <point x="0.916667" y="0.494253" />
+                            <point x="0.878205" y="0.781609" />
+                            <point x="0.5" y="0.816092" />
+                            <point x="0.134615" y="0.758621" />
+                            <point x="0.0897436" y="0.494253" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta3C" pingpong="0" repeatcount="1" repeatto="0" sid="2477977794926856" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\Luis Fernando\Desktop\Pregunta3Nivel2\OpcionC.png">
+                        <collision-poly>
+                            <point x="0.0288462" y="0.290323" />
+                            <point x="0.979701" y="0.204301" />
+                            <point x="0.976496" y="0.763441" />
+                            <point x="0.5" y="0.709677" />
+                            <point x="0.0213675" y="0.784946" />
+                            <point x="0.00961538" y="0.494624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta3CMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="4052273582597592" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.514286">
+                        <collision-poly>
+                            <point x="0.0288462" y="0.290323" />
+                            <point x="0.979701" y="0.204301" />
+                            <point x="0.976496" y="0.763441" />
+                            <point x="0.5" y="0.709677" />
+                            <point x="0.0213675" y="0.784946" />
+                            <point x="0.00961538" y="0.494624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta4C" pingpong="0" repeatcount="1" repeatto="0" sid="2916488984396921" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" original-source="C:\Users\Luis Fernando\Desktop\Pregunta4Nivel2\OpcionC.png">
+                        <collision-poly>
+                            <point x="0.0205128" y="0.179775" />
+                            <point x="0.5" y="0.101124" />
+                            <point x="0.965385" y="0.303371" />
+                            <point x="0.978205" y="0.808989" />
+                            <point x="0.5" y="0.842697" />
+                            <point x="0.0294872" y="0.741573" />
+                            <point x="0.0115385" y="0.494382" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta4CMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="4436768393724337" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204">
+                        <collision-poly>
+                            <point x="0.0205128" y="0.179775" />
+                            <point x="0.5" y="0.101124" />
+                            <point x="0.965385" y="0.303371" />
+                            <point x="0.978205" y="0.808989" />
+                            <point x="0.5" y="0.842697" />
+                            <point x="0.0294872" y="0.741573" />
+                            <point x="0.0115385" y="0.494382" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta5C" pingpong="0" repeatcount="1" repeatto="0" sid="2963287870858691" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505495" original-source="C:\Users\Luis Fernando\Desktop\Pregunta5Nivel2\OpcionC.png">
+                        <collision-poly>
+                            <point x="0.0418719" y="0.186813" />
+                            <point x="0.5" y="0.186813" />
+                            <point x="0.940887" y="0.263736" />
+                            <point x="0.96798" y="0.494505" />
+                            <point x="0.948276" y="0.769231" />
+                            <point x="0.5" y="0.835165" />
+                            <point x="0.044335" y="0.802198" />
+                            <point x="0.0197044" y="0.494505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta5CMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="2390227276858954" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042">
+                        <collision-poly>
+                            <point x="0.0418719" y="0.186813" />
+                            <point x="0.5" y="0.186813" />
+                            <point x="0.940887" y="0.263736" />
+                            <point x="0.96798" y="0.494505" />
+                            <point x="0.948276" y="0.769231" />
+                            <point x="0.5" y="0.835165" />
+                            <point x="0.044335" y="0.802198" />
+                            <point x="0.0197044" y="0.494505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OpcionBPreNi2" sid="3624016623516064">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Pregunta1B" pingpong="0" repeatcount="1" repeatto="0" sid="1836860298707556" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta1Nivel2\OpcionB.png">
+                        <collision-poly>
+                            <point x="0.02457" y="0.217391" />
+                            <point x="0.5" y="0.184783" />
+                            <point x="0.971744" y="0.25" />
+                            <point x="0.984029" y="0.5" />
+                            <point x="0.972973" y="0.76087" />
+                            <point x="0.5" y="0.695652" />
+                            <point x="0.0257985" y="0.771739" />
+                            <point x="0.0110565" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta1BMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="5940640931500841" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.02457" y="0.217391" />
+                            <point x="0.5" y="0.184783" />
+                            <point x="0.971744" y="0.25" />
+                            <point x="0.984029" y="0.5" />
+                            <point x="0.972973" y="0.76087" />
+                            <point x="0.5" y="0.695652" />
+                            <point x="0.0257985" y="0.771739" />
+                            <point x="0.0110565" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta2B" pingpong="0" repeatcount="1" repeatto="0" sid="2485001904630614" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta2Nivel2\OpcionB.png">
+                        <collision-poly>
+                            <point x="0.0903614" y="0.170455" />
+                            <point x="0.5" y="0.113636" />
+                            <point x="0.873494" y="0.238636" />
+                            <point x="0.89759" y="0.5" />
+                            <point x="0.891566" y="0.795455" />
+                            <point x="0.13253" y="0.75" />
+                            <point x="0.0843373" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta2BMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="6808956805360972" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0903614" y="0.170455" />
+                            <point x="0.5" y="0.113636" />
+                            <point x="0.873494" y="0.238636" />
+                            <point x="0.89759" y="0.5" />
+                            <point x="0.891566" y="0.795455" />
+                            <point x="0.13253" y="0.75" />
+                            <point x="0.0843373" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta3B" pingpong="0" repeatcount="1" repeatto="0" sid="5506306041613943" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Luis Fernando\Desktop\Pregunta3Nivel2\OpcionB.png">
+                        <collision-poly>
+                            <point x="0.0364322" y="0.27619" />
+                            <point x="0.5" y="0.27619" />
+                            <point x="0.969849" y="0.228571" />
+                            <point x="0.976131" y="0.819048" />
+                            <point x="0.5" y="0.67619" />
+                            <point x="0.0251256" y="0.809524" />
+                            <point x="0.0201005" y="0.495238" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta3BMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="1485550868944798" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511111">
+                        <collision-poly>
+                            <point x="0.0364322" y="0.27619" />
+                            <point x="0.5" y="0.27619" />
+                            <point x="0.969849" y="0.228571" />
+                            <point x="0.976131" y="0.819048" />
+                            <point x="0.5" y="0.67619" />
+                            <point x="0.0251256" y="0.809524" />
+                            <point x="0.0201005" y="0.495238" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta4B" pingpong="0" repeatcount="1" repeatto="0" sid="1448881298405215" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" original-source="C:\Users\Luis Fernando\Desktop\Pregunta4Nivel2\OpcionB.png">
+                        <collision-poly>
+                            <point x="0.032839" y="0.209174" />
+                            <point x="0.5" y="0.231984" />
+                            <point x="0.953319" y="0.300414" />
+                            <point x="0.981002" y="0.882065" />
+                            <point x="0.5" y="0.859255" />
+                            <point x="0.0311088" y="0.802231" />
+                            <point x="0.00342512" y="0.494298" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta4BMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="9895225150045323" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512821">
+                        <collision-poly>
+                            <point x="0.032839" y="0.209174" />
+                            <point x="0.5" y="0.231984" />
+                            <point x="0.953319" y="0.300414" />
+                            <point x="0.981002" y="0.882065" />
+                            <point x="0.5" y="0.859255" />
+                            <point x="0.0311088" y="0.802231" />
+                            <point x="0.00342512" y="0.494298" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta5B" pingpong="0" repeatcount="1" repeatto="0" sid="452519086829353" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="C:\Users\Luis Fernando\Desktop\Pregunta5Nivel2\OpcionB.png">
+                        <collision-poly>
+                            <point x="0.0962963" y="0.257426" />
+                            <point x="0.5" y="0.247525" />
+                            <point x="0.896296" y="0.277228" />
+                            <point x="0.948148" y="0.49505" />
+                            <point x="0.922222" y="0.792079" />
+                            <point x="0.5" y="0.831683" />
+                            <point x="0.0814815" y="0.782178" />
+                            <point x="0.0296296" y="0.49505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta5BMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="2927764984742265" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042">
+                        <collision-poly>
+                            <point x="0.0962963" y="0.257426" />
+                            <point x="0.5" y="0.247525" />
+                            <point x="0.896296" y="0.277228" />
+                            <point x="0.948148" y="0.49505" />
+                            <point x="0.922222" y="0.792079" />
+                            <point x="0.5" y="0.831683" />
+                            <point x="0.0814815" y="0.782178" />
+                            <point x="0.0296296" y="0.49505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OpcionDPreNi2" sid="6950383628144547">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Pregunta1D" pingpong="0" repeatcount="1" repeatto="0" sid="2363784388763638" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta1Nivel2\OpcionD.png">
+                        <collision-poly>
+                            <point x="0.0314961" y="0.235294" />
+                            <point x="0.968504" y="0.235294" />
+                            <point x="0.97769" y="0.833333" />
+                            <point x="0.0314961" y="0.764706" />
+                            <point x="0.0104987" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta1DMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="7814671376675693" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.0314961" y="0.235294" />
+                            <point x="0.968504" y="0.235294" />
+                            <point x="0.97769" y="0.833333" />
+                            <point x="0.0314961" y="0.764706" />
+                            <point x="0.0104987" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta2D" pingpong="0" repeatcount="1" repeatto="0" sid="3140261369806388" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta2Nivel2\OpcionD.png">
+                        <collision-poly>
+                            <point x="0.0898204" y="0.172414" />
+                            <point x="0.497006" y="0.114943" />
+                            <point x="0.886228" y="0.218391" />
+                            <point x="0.91018" y="0.494253" />
+                            <point x="0.898204" y="0.804598" />
+                            <point x="0.125749" y="0.758621" />
+                            <point x="0.0838323" y="0.494253" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta2DMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="8867248216593606" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772">
+                        <collision-poly>
+                            <point x="0.0898204" y="0.172414" />
+                            <point x="0.497006" y="0.114943" />
+                            <point x="0.886228" y="0.218391" />
+                            <point x="0.91018" y="0.494253" />
+                            <point x="0.898204" y="0.804598" />
+                            <point x="0.125749" y="0.758621" />
+                            <point x="0.0838323" y="0.494253" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta3D" pingpong="0" repeatcount="1" repeatto="0" sid="4021837782067643" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506849" original-source="C:\Users\Luis Fernando\Desktop\Pregunta3Nivel2\OpcionD.png">
+                        <collision-poly>
+                            <point x="0.039823" y="0.290323" />
+                            <point x="0.5" y="0.11828" />
+                            <point x="0.969027" y="0.225806" />
+                            <point x="0.980826" y="0.494624" />
+                            <point x="0.964602" y="0.741935" />
+                            <point x="0.5" y="0.784946" />
+                            <point x="0.0294985" y="0.784946" />
+                            <point x="0.0132743" y="0.494624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta3DMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="7093671712557319" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628">
+                        <collision-poly>
+                            <point x="0.039823" y="0.290323" />
+                            <point x="0.5" y="0.11828" />
+                            <point x="0.969027" y="0.225806" />
+                            <point x="0.980826" y="0.494624" />
+                            <point x="0.964602" y="0.741935" />
+                            <point x="0.5" y="0.784946" />
+                            <point x="0.0294985" y="0.784946" />
+                            <point x="0.0132743" y="0.494624" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta4D" pingpong="0" repeatcount="1" repeatto="0" sid="6745968081461202" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Desktop\Pregunta4Nivel2\OpcionD.png">
+                        <collision-poly>
+                            <point x="0.024961" y="0.177778" />
+                            <point x="0.49922" y="0.188889" />
+                            <point x="0.957878" y="0.3" />
+                            <point x="0.971919" y="0.8" />
+                            <point x="0.49922" y="0.811111" />
+                            <point x="0.0358814" y="0.744444" />
+                            <point x="0.0124805" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta4DMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="6619421083870142" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.024961" y="0.177778" />
+                            <point x="0.49922" y="0.188889" />
+                            <point x="0.957878" y="0.3" />
+                            <point x="0.971919" y="0.8" />
+                            <point x="0.49922" y="0.811111" />
+                            <point x="0.0358814" y="0.744444" />
+                            <point x="0.0124805" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta5D" pingpong="0" repeatcount="1" repeatto="0" sid="1286604661930701" speed="5">
+                    <frame duration="1" hotspotX="0.501235" hotspotY="0.50505" original-source="C:\Users\Luis Fernando\Desktop\Pregunta5Nivel2\OpcionD.png">
+                        <collision-poly>
+                            <point x="0.0419753" y="0.191011" />
+                            <point x="0.498765" y="0.202247" />
+                            <point x="0.94321" y="0.258427" />
+                            <point x="0.967901" y="0.494382" />
+                            <point x="0.948148" y="0.764045" />
+                            <point x="0.498765" y="0.786517" />
+                            <point x="0.0567901" y="0.741573" />
+                            <point x="0.0197531" y="0.494382" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pregunta5DMovimiento" pingpong="0" repeatcount="1" repeatto="0" sid="3974117690807972" speed="5">
+                    <frame duration="1" hotspotX="0.501639" hotspotY="0.507246">
+                        <collision-poly>
+                            <point x="0.0419753" y="0.191011" />
+                            <point x="0.498765" y="0.202247" />
+                            <point x="0.94321" y="0.258427" />
+                            <point x="0.967901" y="0.494382" />
+                            <point x="0.948148" y="0.764045" />
+                            <point x="0.498765" y="0.786517" />
+                            <point x="0.0567901" y="0.741573" />
+                            <point x="0.0197531" y="0.494382" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ContinuarNivel2" sid="6870089840862572">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Base" pingpong="0" repeatcount="1" repeatto="0" sid="2130468761068984" speed="5">
+                    <frame duration="1" hotspotX="0.501006" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\UCR\AnuncioContinuarTabla.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.00632911" />
+                            <point x="0.501006" y="0.00632911" />
+                            <point x="0.830986" y="0.0949367" />
+                            <point x="0.995976" y="0.5" />
+                            <point x="0.822938" y="0.879747" />
+                            <point x="0.146881" y="0.981013" />
+                            <point x="0.0100604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Movimiento" pingpong="0" repeatcount="1" repeatto="0" sid="7602862269342757" speed="5">
+                    <frame duration="1" hotspotX="0.501006" hotspotY="0.5" original-source="C:\Users\Luis Fernando\Google Drive\Docs Multimedios\Imagenes\Imagenes variadas\UCR\AnuncioContinuarTabla.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.00632911" />
+                            <point x="0.501006" y="0.00632911" />
+                            <point x="0.830986" y="0.0949367" />
+                            <point x="0.995976" y="0.5" />
+                            <point x="0.822938" y="0.879747" />
+                            <point x="0.146881" y="0.981013" />
+                            <point x="0.0100604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.142775" y="0.0149254" />
+                            <point x="0.5" y="0.0149254" />
+                            <point x="0.829128" y="0.10199" />
+                            <point x="0.993693" y="0.5" />
+                            <point x="0.821101" y="0.873134" />
+                            <point x="0.146789" y="0.972637" />
+                            <point x="0.0103211" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501006" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.142857" y="0.00632911" />
+                            <point x="0.501006" y="0.00632911" />
+                            <point x="0.830986" y="0.0949367" />
+                            <point x="0.995976" y="0.5" />
+                            <point x="0.822938" y="0.879747" />
+                            <point x="0.146881" y="0.981013" />
+                            <point x="0.0100604" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -4400,7 +5271,7 @@
         <layout>InstruccionesNivel1.xml</layout>
         <layout>ResultadosFinalNiveles.xml</layout>
         <layout>Nivel2.xml</layout>
-        <layout>Puzzle1.xml</layout>
+        <layout>PreguntasNivel2.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>EventosMenú.xml</event-sheet>
@@ -4414,7 +5285,7 @@
         <event-sheet>EventosInstruccionesNivel1.xml</event-sheet>
         <event-sheet>EventosResultadosFinalNiveles.xml</event-sheet>
         <event-sheet>EventosNivel2.xml</event-sheet>
-        <event-sheet>EventosPuzzle1.xml</event-sheet>
+        <event-sheet>EventosPreguntasNivel2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="910" />
